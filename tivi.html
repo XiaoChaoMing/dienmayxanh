@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="base.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/3a9e8c7775.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Tivi gia re</title>
+  </head>
+  <body>
+    <div class="header-topBar w-full bg-blue-600">
+      <div class="px-80 w-full flex justify-center items-center">
+        <div class="swiper topBanner min-w-[1200px]">
+          <div class="swiper-button-next topbarNext after:hidden">
+            <i
+              class="fa-solid fa-angle-right text-gray-500 text-[30px] hover:text-white"
+            ></i>
+          </div>
+          <div class="swiper-button-prev topbarPrev after:hidden">
+            <i
+              class="fa-solid fa-angle-left text-gray-500 text-[30px] hover:text-white"
+            ></i>
+          </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="">
+                <img
+                  class="w-full min-w-[1200px] hidden sm:block"
+                  src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/07/banner/1200-44-1200x44-2.png"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img
+                  class="w-full min-w-[1200px] hidden sm:block"
+                  src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/07/banner/1200-44-1200x44-2.png"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img
+                  class="w-full min-w-[1200px] hidden sm:block"
+                  src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/07/banner/1200-44-1200x44-2.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mb-banner sm:hidden min-w-[425px]">
+        <img
+          class="w-full"
+          src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/06/banner/680-88-680x88-6.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="header-v2 bg-blue-500 sm:min-w-[1300px] min-w-fit">
+      <div class="w-full flex justify-center sm:px-80">
+        <div class="top-header flex items-center gap-4 min-w-[1300px]">
+          <div class="logo">
+            <img
+              class="h-14 hidden sm:block"
+              src="https://i.gyazo.com/d936cdcc28e1f6d50c8b30eef7255d3d.png"
+              alt=""
+            />
+            <img
+              class="h-14 sm:hidden"
+              src="https://img.ws.mms.shopee.vn/930b1db64ce0c65543d9a23d89a07e07"
+              alt=""
+            />
+          </div>
+          <!-- location -->
+          <div
+            class="text-[12px] text-white border-[1px] border-white/40 w-fit h-fit py-1 px-2 rounded-md"
+          >
+            <a href="" class="flex items-center gap-3">
+              <p>
+                Xem giá, tồn kho tại: <br />
+                hà Nội
+              </p>
+              <i class="fa-solid fa-caret-down"></i>
+            </a>
+          </div>
+          <!-- search -->
+          <div
+            class="searchBar bg-white w-fit h-fit justify-center gap-3 items-center px-3 py-1 rounded-md hidden sm:flex"
+          >
+            <input
+              class="w-64 h-8 text-[12px]"
+              type="text"
+              name=""
+              id=""
+              placeholder="Bạn đang tìm gì"
+            />
+            <i class="fa-solid fa-magnifying-glass text-[20px]"></i>
+          </div>
+          <!-- account -->
+          <div
+            class="text-[12px] text-white border-[1px] border-white/40 w-fit h-fit py-1 px-4 rounded-md"
+          >
+            <a href="">
+              <p>
+                Tài khoản & <br />
+                Đơn hàng
+              </p>
+            </a>
+          </div>
+          <!-- cart -->
+          <div
+            class="text-[12px] text-white border-[1px] border-white/40 w-fit h-fit py-3 px-4 rounded-md"
+          >
+            <a href="" class="flex items-center gap-3">
+              <i class="fa-solid fa-cart-shopping text-[20px]"></i>
+              <p class="sm:block hidden">Giỏ hàng</p>
+            </a>
+          </div>
+          <!-- another -->
+          <div class="text-white text-[14px] text-center hidden sm:block">
+            <p>
+              Tư vấn <br />
+              chọn mua
+            </p>
+          </div>
+          <div
+            class="text-white text-[14px] text-center px-3 after:block after:h-6 after:w-[0.5px] after:bg-white before:block before:h-6 before:w-[0.5px] before:bg-white hidden sm:flex"
+          >
+            <p class="px-3">Khuyến mãi</p>
+          </div>
+          <div class="text-white text-[14px] text-center hidden sm:block">
+            <p>Vào bếp</p>
+          </div>
+          <div
+            class="sm:hidden block fixed right-3 text-white text-[20px] cursor-pointer"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="tivi.js"></script>
+  </body>
+</html>

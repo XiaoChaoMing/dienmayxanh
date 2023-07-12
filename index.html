@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="base.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/3a9e8c7775.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Dien may xanh</title>
+  </head>
+  <body class="bg-[#f3f3f3]">
+    <div class="header-top-bar bg-black px-[20%] hidden sm:block">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/04/banner/1200-44-1200x44-1.png"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/05/banner/1200-44-1200x44-4.png"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/06/banner/1200X44-1200x44-1.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="nav">
+          <div
+            class="swiper-button-prev text-white after:visible left-0 hover:opacity-75"
+          >
+            <i class="fa-solid fa-angle-left text-[28px]"></i>
+          </div>
+          <div
+            class="swiper-button-next text-white after:visible right-0 hover:opacity-75"
+          >
+            <i class="fa-solid fa-angle-right text-[28px]"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="second-header bg-blue-500 h-32 px-80 w-full flex flex-col items-center justify-center">
+      <div class="top-header h-1/2 w-full py-1 flex gap-x-3 items-center min-w-[1200px]">
+        <div class="logo h-full">
+          <img
+            class="h-full"
+            src="https://i.gyazo.com/d936cdcc28e1f6d50c8b30eef7255d3d.png"
+            alt=""
+          />
+        </div>
+        <div class="select-location h-full flex items-center">
+          <a
+            href="#"
+            class="flex items-center p-1 gap-2 border-solid border-[1px] border-[rgba(168,208,255,.38)] rounded-sm"
+          >
+            <div class="location text-[12px] text-white">
+              <p>Xem giá, tồn kho tại :</p>
+              <p>Hà Nội</p>
+            </div>
+            <i class="fa-solid fa-angle-down text-white"></i>
+          </a>
+        </div>
+        <div
+          class="search h-[40px] w-[300px] flex items-center justify-between bg-white px-6 rounded-md"
+        >
+          <input class="text-[14px] outline-none" type="text" placeholder="Bạn tìm gì..." />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="accountAndbill h-full flex items-center">
+          <a
+            href="#"
+            class="flex items-center px-3 py-[5px] gap-2 border-solid border-[1px] border-[rgba(168,208,255,.38)] rounded-sm"
+          >
+            <div class="acount text-[12px] text-white">
+              <p>
+                Tài khoản &<br />
+                đơn hàng
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="shoppingCart h-full flex items-center">
+          <a
+            href="#"
+            class="flex items-center px-3 py-[15px] gap-2 border-solid border-[1px] border-[rgba(168,208,255,.38)] rounded-sm"
+          >
+            <div class="cart text-[12px] text-white">
+              <p>Giỏ hàng</p>
+            </div>
+            <i class="fa-solid fa-cart-shopping text-white"></i>
+          </a>
+        </div>
+        <div class="another-section flex items-center gap-x-10">
+          <a class="text-center text-white text-[14px]" href=""
+            ><p
+              class="relative flex after:content-[''] after:block after:bg-white after:h-[40px] after:w-[1px] after:absolute after:right-[-20px] after:opacity-40"
+            >
+              Tư vấn <br />
+              chọn mua
+            </p></a
+          >
+          <a href="" class="text-center text-white text-[14px]"
+            ><p
+              class="relative flex items-center after:content-[''] after:block after:bg-white after:h-[40px] after:w-[1px] after:absolute after:right-[-20px] after:opacity-40"
+            >
+              Khuyến mãi
+            </p></a
+          >
+          <a href="" class="text-center text-white text-[14px]"
+            ><p>Vào bếp</p></a
+          >
+        </div>
+      </div>
+      <div class="bottom-header h-1/2 min-w-[1200px] py-1 ">
+        <ul class="h-full flex items-center gap-x-5">
+          <li class="menu cursor-pointer group">
+            <div class="flex items-center text-white gap-x-3">
+              <i class="fa-solid fa-bars text-[20px]"></i>
+              <p>Tất cả danh mục</p>
+            </div>
+            <ul class="w-72 bg-white hidden group-hover:block group-hover:absolute group-hover:z-50">
+                <li class="border-t border-solid border-[rgba(168,208,255,.38)] h-[30px] hover:font-medium group/submenu">
+                  <div class="flex items-center w-full h-full justify-between px-2">
+                    <div class="h-full w-full flex items-center gap-x-2">
+                      <img src="https://cdn.tgdd.vn//content/LuxuryIcon-72x72.png" class="h-full" alt="">
+                      <a href="" class="hover:text-blue-500 hover:font-medium">
+                        <p class="text-[15px]">Hàng cao cấp</p>
+                      </a>
+                    
+                    </div>
+                    <i class="fa-solid fa-angle-right opacity-50"></i>
+                  </div>
+                  <div class="bg-white text-[14px] pl-5 absolute w-[1000px] h-full left-full top-0 hidden group-hover/submenu:block group-hover/submenu:flex gap-x-7  ">
+                    <div class="mb-4">
+                      <div class="flex flex-col gap-y-1 py-3 ">
+                        <div class="flex ">
+                          <p class="pb-1 after:content[''] after:block after:bg-[rgba(168,208,255,.38)] after:h-[1px] after:w-[200px] w-[40px]">TIVI </p>
+                          <a href="" class="text-blue-500">
+                            Xem tất cả
+                            <i class="fa-solid fa-caret-right"></i>
+                          </a>
+                        </div>
+                        <a href="" class="hover:text-blue-500 font-thin">Samsung</a>
+                        <a href="" class="hover:text-blue-500 font-thin">LG</a>
+                        <a href="" class="hover:text-blue-500 font-thin">Sony</a>
+                      </div>
+                      <div>
+                        <div class="flex flex-col gap-y-1 py-3 ">
+                          <p class="pb-1 after:content[''] after:block after:bg-[rgba(168,208,255,.38)] after:h-[1px] after:w-[200px] ">THIẾT BỊ GIẶT, SẤY</p>
+                          <a href="" class="hover:text-blue-500 font-thin">Tủ chăm sóc quần áo</a>
+                          <a href="" class="hover:text-blue-500 font-thin">Máy giặt-Sấy</a>
+                          <a href="" class="hover:text-blue-500 font-thin">Máy giặt </a>
+                          <a href="" class="hover:text-blue-500 font-thin">Máy sấy </a>
+                        </div>
+                      </div>
+                      <div>
+                        
+                        <div class="flex flex-col gap-y-1 py-3 ">
+                          <div class="flex">
+                            <p class="pb-1 w-[80px] after:content[''] after:block after:bg-[rgba(168,208,255,.38)] after:h-[1px] after:w-[200px] ">MÁY LẠNH</p>
+                            <a href="" class="text-blue-500">
+                              Xem tất cả
+                              <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                          </div>
+                          
+                          <a href="" class="hover:text-blue-500 font-thin">Daikin</a>
+                          <a href="" class="hover:text-blue-500 font-thin">Gree</a>
+                          <a href="" class="hover:text-blue-500 font-thin">LG</a>
+                          <a href="" class="hover:text-blue-500 font-thin">Panasonic</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-4">
+                      <div class="flex flex-col gap-y-1 py-3">
+                        
+                        <div class="flex ">
+                          <p class="pb-1 w-[80px] after:content[''] after:block after:bg-[rgba(168,208,255,.38)] after:h-[1px] after:w-[200px] ">TỦ LẠNH</p>
+                          <a href="" class="text-blue-500">
+                            Xem tất cả
+                            <i class="fa-solid fa-caret-right"></i>
+                          </a>
+                        </div>
+                        
+                        <a href="" class="hover:text-blue-500 font-thin">Tủ lạnh nhiều cửa</a>
+                        <a href="" class="hover:text-blue-500 font-thin">Hitachi</a>
+                        <a href="" class="hover:text-blue-500 font-thin">LG</a>
+                        <a href="" class="hover:text-blue-500 font-thin">Panasonic</a>
+                        <a href="" class="hover:text-blue-500 font-thin">Samsung</a>
+                        <a href="" class="hover:text-blue-500 font-thin">Gree</a>
+                        <a href="" class="hover:text-blue-500 font-thin">Sharp</a>
+                        <a href="" class="hover:text-blue-500 font-thin">Toshiba</a>
+                      </div>
+                      <div class="flex flex-col gap-y-1 py-3">
+                        
+                        <div class="flex">
+                          <p class="pb-1 w-[150px] after:content[''] after:block after:bg-[rgba(168,208,255,.38)] after:h-[1px] after:w-[200px] ">MÁY RỬA CHÉN/BÁT</p>
+                          <a href="" class="text-blue-500">
+                            Xem tất cả
+                            <i class="fa-solid fa-caret-right"></i>
+                          </a>
+                        </div>
+                        
+                        <a href="" class="hover:text-blue-500 font-thin">Bosch</a>
+                        <a href="" class="hover:text-blue-500 font-thin">Electrolux</a>
+                        <a href="" class="hover:text-blue-500 font-thin">Candy</a>
+                        <a href="" class="hover:text-blue-500 font-thin">WhirlPool</a>
+                      </div>
+                    </div>
+
+                    <div class="mb-4">
+                      <div class="flex flex-col gap-y-1 py-3"> 
+                        
+                        <div class="flex">
+                          <p class="pb-1 w-[140px] after:content[''] after:block after:bg-[rgba(168,208,255,.38)] after:h-[1px] after:w-[200px] ">THIẾT BỊ GIA DỤNG</p>
+                          <a href="" class="text-blue-500">
+                            Xem tất cả
+                            <i class="fa-solid fa-caret-right"></i>
+                          </a>
+                        </div>
+                        
+                        <a href="" class="hover:text-blue-500 font-thin">Robot hút bụi</a>
+                        <a href="" class="hover:text-blue-500 font-thin">Hút bụi cây</a>
+                        <a href="" class="hover:text-blue-500 font-thin">Máy lọc không khí</a>
+                        
+                      </div>
+                      <div class="flex flex-col gap-y-1 py-3">
+                        <div class="flex">
+                          <p class="pb-1 w-[130px] after:content[''] after:block after:bg-[rgba(168,208,255,.38)] after:h-[1px] after:w-[200px] ">THIẾT BỊ NHÀ BẾP</p>
+                          <a href="" class="text-blue-500">
+                            Xem tất cả
+                            <i class="fa-solid fa-caret-right"></i>
+                          </a>
+                        </div>
+                        
+                        <a href="" class="hover:text-blue-500 font-thin">Nồi cơm cao tần</a>
+                        <a href="" class="hover:text-blue-500 font-thin">Nồi chiên</a>
+                        <a href="" class="hover:text-blue-500 font-thin">Bếp điện âm/đôi</a>
+                        <a href="" class="hover:text-blue-500 font-thin">Máy ép trái cây</a>
+                        <a href="" class="hover:text-blue-500 font-thin">Máy hút mùi/khói</a>
+                        <a href="" class="hover:text-blue-500 font-thin">Máy xay sinh tố</a>
+                        
+                      </div>
+                    </div>
+                    <div class="mb-4">
+                      <div class="flex flex-col gap-y-1 py-3">
+                        
+                        <div class="flex">
+                          <p class="pb-1 w-[120px] after:content[''] after:block after:bg-[rgba(168,208,255,.38)] after:h-[1px] after:w-[200px] ">MÁY LỌC NƯỚC</p>
+                          <a href="" class="text-blue-500">
+                            Xem tất cả
+                            <i class="fa-solid fa-caret-right"></i>
+                          </a>
+                        </div>
+                        
+                        <a href="" class="hover:text-blue-500 font-thin">ChungHo</a>
+                        <a href="" class="hover:text-blue-500 font-thin">Fuji Smart</a>
+                        <a href="" class="hover:text-blue-500 font-thin">Ion Farms</a>
+                        <a href="" class="hover:text-blue-500 font-thin">IONPIA</a>
+                        <a href="" class="hover:text-blue-500 font-thin">Kangen</a>
+                        <a href="" class="hover:text-blue-500 font-thin">Panasonic</a>
+                      </div>
+                      <div class="flex flex-col gap-y-1 py-3">
+                        <P></P>
+                        <div class="flex">
+                          <p class="pb-1 w-[130px] after:content[''] after:block after:bg-[rgba(168,208,255,.38)] after:h-[1px] after:w-[200px] ">ĐỒNG HỒ CAO CẤP</p>
+                        </div>
+                        
+                        <a href="" class="hover:text-blue-500 font-thin">Đồng hồ thời trang</a>
+                        <a href="" class="hover:text-blue-500 font-thin">FREDERIQUE CONSTANT</a>
+                        <a href="" class="hover:text-blue-500 font-thin">Titoni</a>
+                        <a href="" class="hover:text-blue-500 font-thin">Certina</a>
+                        <a href="" class="hover:text-blue-500 font-thin">Movado</a>
+                        <a href="" class="hover:text-blue-500 font-thin">Oriend</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="border-t border-solid border-[rgba(168,208,255,.38)] h-[30px] hover:font-medium group/submenu2">
+                  <div class="flex items-center w-full h-full justify-between px-2">
+                    <div class="h-full w-full flex items-center gap-x-2">
+                      <img src="https://cdn.tgdd.vn//content/Hot-73x72.png" class="h-full" alt="">
+                      <a href="" class="hover:text-blue-500 hover:font-medium">
+                        <p class="text-[15px]">Tivi,</p>
+                      </a>
+                      <a href="" class="hover:text-blue-500 hover:font-medium">
+                        <p class="text-[15px]">Loa, Dàn Karaoke</p>
+                      </a>
+                      
+                    
+                    </div>
+                    <i class="fa-solid fa-angle-right opacity-50"></i>
+                  </div>
+                  <div class="bg-white text-[14px] pl-5 absolute w-[1000px] h-full left-full top-0 hidden group-hover/submenu2:block group-hover/submenu2:flex gap-x-7 ">
+                    <div class="mb-4">
+                        <div class="flex flex-col gap-y-1 py-3 ">
+                          <div class="flex">
+                            <p class="pb-1 w-[80px] after:content[''] after:block after:bg-[rgba(168,208,255,.38)] after:h-[1px] after:w-[200px] ">MÁY LẠNH</p>
+                            <a href="" class="text-blue-500">
+                              Xem tất cả
+                              <i class="fa-solid fa-caret-right"></i>
+                            </a>
+                          </div>
+                          
+                          <a href="" class="hover:text-blue-500 font-thin">Daikin</a>
+                          <a href="" class="hover:text-blue-500 font-thin">Gree</a>
+                          <a href="" class="hover:text-blue-500 font-thin">LG</a>
+                          <a href="" class="hover:text-blue-500 font-thin">Panasonic</a>
+                          <a href="" class="hover:text-blue-500 font-thin">Daikin</a>
+                          <a href="" class="hover:text-blue-500 font-thin">Gree</a>
+                          <a href="" class="hover:text-blue-500 font-thin">LG</a>
+                          <a href="" class="hover:text-blue-500 font-thin">Panasonic</a>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                      <div class="flex flex-col gap-y-1 py-3 ">
+                        <div class="flex">
+                          <p class="pb-1 w-[80px] after:content[''] after:block after:bg-[rgba(168,208,255,.38)] after:h-[1px] after:w-[200px] ">MÁY LẠNH</p>
+                          <a href="" class="text-blue-500">
+                            Xem tất cả
+                            <i class="fa-solid fa-caret-right"></i>
+                          </a>
+                        </div>
+                        
+                        <a href="" class="hover:text-blue-500 font-thin">Daikin</a>
+                        <a href="" class="hover:text-blue-500 font-thin">Gree</a>
+                        <a href="" class="hover:text-blue-500 font-thin">LG</a>
+                        <a href="" class="hover:text-blue-500 font-thin">Panasonic</a>
+                        <a href="" class="hover:text-blue-500 font-thin">Daikin</a>
+                        <a href="" class="hover:text-blue-500 font-thin">Gree</a>
+                        <a href="" class="hover:text-blue-500 font-thin">LG</a>
+                        <a href="" class="hover:text-blue-500 font-thin">Panasonic</a>
+                      </div>
+                  </div>
+
+                  <div class="mb-4">
+                    <div class="flex flex-col gap-y-1 py-3 ">
+                      <div class="flex">
+                        <p class="pb-1 w-[80px] after:content[''] after:block after:bg-[rgba(168,208,255,.38)] after:h-[1px] after:w-[200px] ">MÁY LẠNH</p>
+                        <a href="" class="text-blue-500">
+                          Xem tất cả
+                          <i class="fa-solid fa-caret-right"></i>
+                        </a>
+                      </div>
+                      
+                      <a href="" class="hover:text-blue-500 font-thin">Daikin</a>
+                      <a href="" class="hover:text-blue-500 font-thin">Gree</a>
+                      <a href="" class="hover:text-blue-500 font-thin">LG</a>
+                      <a href="" class="hover:text-blue-500 font-thin">Panasonic</a>
+                      <a href="" class="hover:text-blue-500 font-thin">Daikin</a>
+                      <a href="" class="hover:text-blue-500 font-thin">Gree</a>
+                      <a href="" class="hover:text-blue-500 font-thin">LG</a>
+                      <a href="" class="hover:text-blue-500 font-thin">Panasonic</a>
+                    </div>
+                </div>
+                  </div>
+                </li>
+                <li class="border-t border-solid border-[rgba(168,208,255,.38)] h-[30px]  hover:font-medium  ">
+                  <div  class="flex items-center w-full h-full justify-between px-2">
+                    <div class="h-full w-full flex items-center gap-x-2">
+                      <img src="https://cdn.tgdd.vn//content/Icons-1-72x72.png" class="h-full" alt="">
+                      <a href="" class="hover:text-blue-500 hover:font-medium">
+                        <p class="text-[15px]">Tủ lạnh,</p>
+                      </a>
+                      <a href="" class="hover:text-blue-500 hover:font-medium">
+                        <p class="text-[15px]">Tủ đông,</p>
+                      </a>
+                      <a href="" class="hover:text-blue-500 hover:font-medium">
+                        <p class="text-[15px]">Tủ mát</p>
+                      </a>
+                    
+                    </div>
+                    <i class="fa-solid fa-angle-right opacity-50"></i>
+                  </div>
+                  
+                </li>
+                <li class="border-t border-solid border-[rgba(168,208,255,.38)] h-[30px] hover:font-medium transition">
+                  <div  class="flex items-center w-full h-full justify-between px-2">
+                    <div class="h-full w-full flex items-center gap-x-2">
+                      <img src="https://cdn.tgdd.vn//content/Hot-73x72.png" class="h-full" alt="">
+                    
+                    <a href="" class="hover:text-blue-500 hover:font-medium">
+                      <p class="text-[15px]">Máy lạnh,</p>
+                    </a>
+                    <a href="" class="hover:text-blue-500 hover:font-medium">
+                      <p class="text-[15px]">Máy giặt,</p>
+                    </a>
+                    <a href="" class="hover:text-blue-500 hover:font-medium">
+                      <p class="text-[15px]">Máy sấy</p>
+                    </a>
+                    </div>
+                    <i class="fa-solid fa-angle-right opacity-50"></i>
+                  </div>
+                </li>
+                <li class="border-t border-solid border-[rgba(168,208,255,.38)] h-[30px] hover:font-medium transition">
+                  <div  class="flex items-center w-full h-full justify-between px-2">
+                    <div class="h-full w-full flex items-center gap-x-2">
+                      <img src="https://cdn.tgdd.vn//content/Hot-73x72.png" class="h-full" alt="">
+                    
+                    <a href="" class="hover:text-blue-500 hover:font-medium">
+                      <p class="text-[15px]">Quạt điều hòa,</p>
+                    </a>
+                    <a href="" class="hover:text-blue-500 hover:font-medium">
+                      <p class="text-[15px]">Máy nước nóng</p>
+                    </a>
+                    </div>
+                    <i class="fa-solid fa-angle-right opacity-50"></i>
+                  </div>
+                </li>
+                <li class="border-t border-solid border-[rgba(168,208,255,.38)] h-[30px]  hover:font-medium transition">
+                  <div  class="flex items-center w-full h-full justify-between px-2">
+                    <div class="h-full w-full flex items-center gap-x-2">
+                      <img src="https://cdn.tgdd.vn//content/Icons-4-72x72.png" class="h-full" alt="">
+                    
+                    <a href="" class="hover:text-blue-500 hover:font-medium">
+                      <p class="text-[15px]">Điện gia dụng,</p>
+                    </a>
+                    <a href="" class="hover:text-blue-500 hover:font-medium">
+                      <p class="text-[15px]">Sinh tố,</p>
+                    </a>
+                    <a href="" class="hover:text-blue-500 hover:font-medium">
+                      <p class="text-[15px]">Xay ép</p>
+                    </a>
+                    </div>
+                    
+                    <i class="fa-solid fa-angle-right opacity-50"></i>
+                  </div>
+                </li>
+                <li class="border-t border-solid border-[rgba(168,208,255,.38)] h-[30px] hover:font-medium transition">
+                  <div  class="flex items-center w-full h-full justify-between px-2">
+                    <div class="h-full w-full flex items-center gap-x-2">
+                      <img src="https://cdn.tgdd.vn//content/Icons-5-72x72.png" class="h-full" alt="">
+                    
+                    <a href="" class="hover:text-blue-500 hover:font-medium">
+                      <p class="text-[15px]">Đồ bếp,</p>
+                    </a>
+                    <a href="" class="hover:text-blue-500 hover:font-medium">
+                      <p class="text-[15px]">Bếp điện,</p>
+                    </a>
+                    <a href="" class="hover:text-blue-500 hover:font-medium">
+                      <p class="text-[15px]">Nồi cơm</p>
+                    </a>
+                    </div>
+                    <i class="fa-solid fa-angle-right opacity-50"></i>
+                  </div>
+                </li>
+                <li class="border-t border-solid border-[rgba(168,208,255,.38)] h-[30px] hover:font-medium transition">
+                  <div  class="flex items-center w-full h-full justify-between px-2">
+                    <div class="h-full w-full flex items-center gap-x-2">
+                      <img src="https://cdn.tgdd.vn//content/LuxuryIcon-72x72.png" class="h-full" alt="">
+                    
+                    <a href="" class="hover:text-blue-500 hover:font-medium">
+                      <p class="text-[15px]">Máy lọc nước,</p>
+                    </a>
+                    <a href="" class="hover:text-blue-500 hover:font-medium">
+                      <p class="text-[15px]">Nồi chiên</p>
+                    </a>
+                    </div>
+                    <i class="fa-solid fa-angle-right opacity-50"></i>
+                  </div>
+                </li>
+                <li class="border-t border-solid border-[rgba(168,208,255,.38)] h-[30px]  hover:font-medium transition">
+                  <div href="" class="flex items-center w-full h-full justify-between px-2">
+                    <div class="h-full w-full flex items-center gap-x-2">
+                      <img src="https://cdn.tgdd.vn//content/Vector-40x38.png" class="h-full" alt="">
+                    
+                    <a href="" class="hover:text-blue-500 hover:font-medium">
+                      <p class="text-[15px]">Máy hút bụi,</p>
+                    </a>
+                    <a href="" class="hover:text-blue-500 hover:font-medium">
+                      <p class="text-[15px]">Máy rửa chén</p>
+                    </a>
+                    </div>
+                    <i class="fa-solid fa-angle-right opacity-50"></i>
+                  </div>
+                </li>
+                <li class="border-t border-solid border-[rgba(168,208,255,.38)] h-[30px] hover:font-medium transition">
+                  <div href="" class="flex items-center w-full h-full justify-between px-2">
+                    <div class="h-full w-full flex items-center gap-x-2">
+                      <img src="https://cdn.tgdd.vn//content/Heartbeat-72x72.png" class="h-full" alt="">
+                    
+                    <a href="" class="hover:text-blue-500 hover:font-medium">
+                      <p class="text-[15px]">Sức khỏe,</p>
+                    </a>
+                    <a href="" class="hover:text-blue-500 hover:font-medium">
+                      <p class="text-[15px]">Làm đẹp</p>
+                    </a>
+                    <span class="text-red-600 text-[11px]  bg-red-200 px-2 rounded-lg">Mới</span>
+                    </div>
+                    <i class="fa-solid fa-angle-right opacity-50"></i>
+                  </div>
+                </li>
+                <li class="border-t border-solid border-[rgba(168,208,255,.38)] h-[30px]  hover:font-medium transition">
+                  <div href="" class="flex items-center w-full h-full justify-between px-2">
+                    <div class="h-full w-full flex items-center gap-x-2">
+                      <img src="https://cdn.tgdd.vn//content/Icons10-72x72.png" class="h-full" alt="">
+                      <a href="" class="hover:text-blue-500 hover:font-medium">
+                        <p class="text-[15px]">Đồ nghề-dụng cụ sửa chữa</p>
+                      </a>
+                    
+                    </div>
+                    <i class="fa-solid fa-angle-right opacity-50"></i>
+                  </div>
+                </li>
+                <li class="border-t border-solid border-[rgba(168,208,255,.38)] h-[30px]  hover:font-medium transition">
+                  <div href="" class="flex items-center w-full h-full justify-between px-2">
+                    <div class="h-full w-full flex items-center gap-x-2">
+                      <img src="https://cdn.tgdd.vn//content/Icons-7-72x72-1.png" class="h-full" alt="">
+                    
+                    <a href="" class="hover:text-blue-500 hover:font-medium">
+                      <p class="text-[15px]">Điện thoại,</p>
+                    </a>
+                    <a href="" class="hover:text-blue-500 hover:font-medium">
+                      <p class="text-[15px]">Laptop,</p>
+                    </a>
+                    <a href="" class="hover:text-blue-500 hover:font-medium">
+                      <p class="text-[15px]">Tablet</p>
+                    </a>
+                    </div>
+                    <i class="fa-solid fa-angle-right opacity-50"></i>
+                  </div>
+                </li>
+                <li class="border-t border-solid border-[rgba(168,208,255,.38)] h-[30px]  hover:font-medium transition">
+                  <div href="" class="flex items-center w-full h-full justify-between px-2">
+                    <div class="h-full w-full flex items-center gap-x-2">
+                      <img src="https://cdn.tgdd.vn//content/Icons-8-72x72.png" class="h-full" alt="">
+                    
+                    <a href="" class="hover:text-blue-500 hover:font-medium">
+                      <p class="text-[15px]">Phụ kiện,</p>
+                    </a>
+                    <a href="" class="hover:text-blue-500 hover:font-medium">
+                      <p class="text-[15px]">Đồng hồ</p>
+                    </a>
+                    </div>
+                    <i class="fa-solid fa-angle-right opacity-50"></i>
+                  </div>
+                </li>
+                <li class="border-t border-solid border-[rgba(168,208,255,.38)] h-[30px] hover:font-medium transition">
+                  <div href="" class="flex items-center w-full h-full justify-between px-2">
+                    <div class="h-full w-full flex items-center gap-x-2">
+                      <img src="https://cdn.tgdd.vn//content/Bicycle-72x72.png" class="h-full" alt="">
+                    
+                    <a href="" class="hover:text-blue-500 hover:font-medium">
+                      <p class="text-[15px]">Xe đạp,</p>
+                    </a>
+                    <a href="" class="hover:text-blue-500 hover:font-medium">
+                      <p class="text-[15px]">Phụ kiện xe đạp</p>
+                    </a>
+                    </div>
+                    <i class="fa-solid fa-angle-right opacity-50"></i>
+                  </div>
+                </li>
+                <li class="border-t border-solid border-[rgba(168,208,255,.38)] h-[30px]  hover:font-medium transition">
+                  <div href="" class="flex items-center w-full h-full justify-between px-2">
+                    <div class="h-full w-full flex items-center gap-x-2">
+                      <img src="https://cdn.tgdd.vn//content/Icons-9-72x72-1.png" class="h-full" alt="">
+                    
+                    <a href="" class="hover:text-blue-500 hover:font-medium">
+                      <p class="text-[15px]">Máy cũ,</p>
+                    </a>
+                    <a href="" class="hover:text-blue-500 hover:font-medium">
+                      <p class="text-[15px]">Trưng bày</p>
+                    </a>
+                    </div>
+                    <i class="fa-solid fa-angle-right opacity-50"></i>
+                  </div>
+                </li>
+
+                
+            </ul>
+          </li>
+          <li>
+            <a href="./tivi.html">
+              <p class="text-white text-[13px] inline-block">Tivi</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <p class="text-white text-[13px] inline-block">Tủ lạnh</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <p class="text-white  text-[13px] inline-block">Điều hòa</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <p class="text-white text-[13px] inline-block">Máy giặt</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <p class="text-white text-[13px] inline-block">Gia dụng</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <p class="text-white text-[13px] inline-block">Quạt</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <p class="text-white text-[13px] inline-block">Máy cũ</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <p class="text-white text-[13px] inline-block">Loa</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <p class="text-white text-[13px] inline-block">Tủ đông</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <p class="text-white text-[13px] inline-block">Quạt điều hòa</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <p class="text-white text-[13px] inline-block">Robot hút bụi</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <p class="text-white text-[13px] inline-block">Nồi chiên</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <p class="text-white text-[13px] inline-block">Lọc nước</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <p class="text-white text-[13px] inline-block">Điện thoại</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <p class="text-white text-[13px] inline-block">Laptop</p>
+            </a>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    <div class="lange-banner overflow-hidden w-full flex items-center justify-center">
+      <a href="" class="w-[1920px] min-w-[1920px] overflow-hidden">
+        <img  class="w-full"src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/06/banner/desk-min-1920x450.png" alt="">
+      </a>
+    </div>
+    <div class="maint-container h-max w-full relative mt-[-100px] mb-2">
+      <div class="vouncher_carosel  w-full h-fit">
+        <div class="px-80 w-full h-full flex justify-center items-center">
+          <div class=" h-full w-full min-w-[1000px] relative">
+
+            <div class="swiper-button-prev Vbtn_Prev after:visible h-[50px] w-[50px] bg-[rgba(252,251,251,0.61)] rounded-full translate-x-[-70%] hover:opacity-80">
+              <i class="fa-solid fa-angle-left text-gray-700"></i>
+            </div>
+            <div class="swiper-button-next Vbtn_Next after:visible h-[50px] w-[50px] bg-[rgba(252,251,251,0.61)] rounded-full translate-x-[70%] hover:opacity-80">
+              <i class="fa-solid fa-angle-right text-gray-700"></i>
+            </div>
+
+            <div class="swiper vouncherSwiper">
+              <div class="swiper-wrapper voucher-wrapper">
+                
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="option-promo h-32 w-full sm:flex items-center justify-center  my-2 px-80 hidden" >
+        <ul class=" h-full w-full flex justify-between items-center gap-x-4 min-w-max">
+          <li class="bg-white px-5 py-3 rounded-xl w-full">
+            <a href="" class="flex items-center gap-x-4 ">
+              <img class="h-[70px]" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/100x100-100x100-37.png" alt="">
+              <p class="text-[23px]">Giá rẻ quá</p>
+            </a>
+          </li>
+          <li class="bg-white px-5 py-3 rounded-xl w-full">
+            <a href="" class="flex items-center gap-x-4 ">
+              <img class="h-[70px]" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/Frame-46605da-280x280.png" alt="">
+              
+              <p class="text-[23px]"> Giá rẻ từ <br/> 5.990.000đ</p>
+            </a>
+          </li>
+          <li class="bg-white px-5 py-3 rounded-xl w-full">
+            <a href="" class="flex items-center gap-x-4 ">
+              <img class="h-[70px] " src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/100x100--11--280x280.png" alt="">
+              <p class="text-[23px] min-w-[200px]">Quạt điều hòa <br/> từ 1.990 triệu</p>
+            </a>
+          </li>
+          <li class="bg-white px-5 py-3 rounded-xl w-full">
+            <a href="" class="flex items-center gap-x-4 ">
+              <img class="h-[70px]" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn//content/100x100-101x100-5.png" alt="">
+              <p class="text-[23px]">Mát xanh mặt</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="flash-sale h-fit w-full my-4">
+        <div class="px-80 h-[1000px] w-full flex items-center justify-center"> 
+          <div class="h-full w-full bg-red-400 rounded-xl p-4 min-w-[1200px]">
+            <div class="h-[70px] flex items-center">
+              <div class="h-full flex gap-x-2 items-center w-fit min-w-[500px]">
+                <div class="h-full">
+                  <img class="h-full" src="https://cdn.tgdd.vn/mwgcart/mwgcore/ContentMwg/images/homev2/lightning-ic.png" alt="">
+                </div>
+                <div >
+                  <p class="text-yellow-300 text-[30px] font-bold">GIỜ VÀNG DEAL SỐC</p>
+                  <div class="flex items-center">
+                    <p class="mr-[20px] text-white">Kết thúc trong </p>
+                    <div class="flex items-center text-white">
+                      <p class="h-8 w-8 bg-black text-center leading-[2] rounded-md">04</p>
+                    <span class="mx-2 font-bold">:</span>
+                    <p class="h-8 w-8 bg-black text-center leading-[2] rounded-md">04</p>
+                    <span class="mx-2 font-bold">:</span>
+                    <p class="h-8 w-8 bg-black text-center leading-[2] rounded-md">04</p>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="h-full flex flex-col items-center justify-center w-full text-white ">
+                <p class="text-[16px]">Đang diễn ra</p>
+                <p class="text-[25px] font-medium">10:00 - 22:00</p>
+                <span class="h-[4px] w-[45px] bg-white rounded-full mt-1"></span>
+              </div>
+            </div>
+            
+              <div class="h-full items-center relative">
+                <div class="swiper-button-prev flashSalePrev left-[-1.4%] translate-y-[-150%] h-16 w-9 btnR_shadow bg-[rgba(252,251,251,0.81)] after:text-gray-700 after:content-['prev']">
+                  
+                </div>
+                <div class="swiper-button-next flashSaleNext right-[-1.4%] translate-y-[-150%] h-16 w-9 btnL_shadow bg-[rgba(252,251,251,0.81)] after:text-gray-700 after:content-['next']">
+                  
+                </div>
+                <div class="swiper flashSaleSwiper h-[86%] mt-4 ">
+                  <div class="swiper-wrapper flashSaleWrapper ">
+                    
+                  </div>
+                </div>
+              </div>
+              
+            
+          </div>
+        </div>
+      </div>
+      <div class="hot-deal w-full h-[700px] my-8"> 
+        <div class="h-full w-full px-80 flex items-center justify-center">
+          <div class="bg-blue-700 h-full w-full min-w-[1200px] rounded-xl overflow-hidden ">
+            <div class="h-fit w-full">
+              <img class="w-full" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/06/banner/tagline-tc-1200x120.jpg" alt="">
+            </div>
+            <div class="h-[70%] p-4 relative ">
+              <div class="swiper-button-prev hotDealPrev translate-y-[-10%] h-16 w-9 btnR_shadow bg-[rgba(252,251,251,0.81)] after:text-gray-700 after:content-['prev']"></div>
+              <div class="swiper-button-next hotDealNext translate-y-[-10%] h-16 w-9 btnL_shadow bg-[rgba(252,251,251,0.81)] after:text-gray-700 after:content-['next']"></div>
+              <div class="swiper hotDealSwiper h-full ">
+                <div class="swiper-wrapper hotDealWrapper">
+
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center w-full justify-center pt-3 ">
+              <a class="flex items-center bg-slate-100 h-fit w-fit px-20 py-3 relative group/btn" href="">
+                <p class="text-gray-800">Xem thêm sản phẩm</p>
+                <i class="fa-solid fa-angle-right pl-3 group-hover/btn:translate-x-3 transition"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="promo-7day w-full h-[730px] my-8 ">
+        <div class="px-80 w-full h-full flex items-center justify-center">
+          <div class="bg-yellow-500 w-full h-full min-w-[1200px] rounded-2xl overflow-hidden flex flex-col">
+            <div class="w-full h-fit">
+              <img class="w-full " src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/07/campaign/Frame-2327512-1200x120.png" alt="">
+            </div>
+            <div class=" w-full h-[70%]  p-3 relative ">
+              <div class="swiper-button-prev promo7-DayPrev translate-y-[-10%] h-16 w-9 btnR_shadow bg-[rgba(252,251,251,0.81)] after:text-gray-700 after:content-['prev']"></div>
+              <div class="swiper-button-next promo7-DayNext translate-y-[-10%] h-16 w-9 btnL_shadow bg-[rgba(252,251,251,0.81)] after:text-gray-700 after:content-['next']"></div>
+              <div class="swiper h-full swiper7Day">
+                <div class="swiper-wrapper wraper7Day">
+                  <a href=""></a>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center w-full justify-center pt-3 ">
+              <a class="flex items-center bg-slate-100 h-fit w-fit px-20 py-3 relative group/btn" href="">
+                <p class="text-gray-800">Xem thêm sản phẩm</p>
+                <i class="fa-solid fa-angle-right pl-3 group-hover/btn:translate-x-3 transition"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shopping-trend h-[340px] w-full my-8">
+        <div class="px-80 h-full w-full flex justify-center">
+          <div class="h-full w-full min-w-[1200px] bg-gradient-to-r from-[#ffecd2] to-[#fcb69f] rounded-2xl">
+            <div class="p-5 text-[23px] font-semibold">
+              <p>XU HƯỚNG MUA SẮM</p>
+            </div>
+            <div class="flex justify-between px-5">
+              <div class="rounded-xl">
+                <a class="relative" href="">
+                  <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/03/banner/dadad-280x235.png" alt="">
+                  <span class="absolute left-4 top-40 text-[19px] font-normal w-[200px] ">
+                    Máy lạnh rẻ quá
+                  </span>
+                  <strong class="absolute left-4 top-48 text-[15px] font-normal w-[200px] text-blue-500">
+                    Giá từ 5.490.000đ
+                  </strong>
+                </a>
+              </div>
+              <div class="rounded-xl">
+                <a class="relative" href="">
+                  <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/02/banner/XuhuongTV-280x235.png" alt="">
+                  <span class="absolute left-4 top-40 text-[19px] font-normal w-[200px] ">
+                    Tivi giá rẻ
+                  </span>
+                  <strong class="absolute left-4 top-48 text-[15px] font-normal w-[200px] text-blue-500">
+                    Giá từ 5.490.000đ
+                  </strong>
+                </a>
+              </div>
+              <div class="rounded-xl">
+                <a class="relative" href="">
+                  <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/07/banner/gia-dung--2--280x235.png" alt="">
+                  <span class="absolute left-4 top-40 text-[19px] font-normal w-[200px] ">
+                    Nồi chiên giá rẻ
+                  </span>
+                  <strong class="absolute left-4 top-48 text-[15px] font-normal w-[200px] text-blue-500">
+                    Giá từ 5.490.000đ
+                  </strong>
+                </a>
+              </div>
+              <div class="rounded-xl">
+                <a class="relative" href="">
+                  <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/03/banner/gia-dung--5--280x235.png" alt="">
+                  <span class="absolute left-4 top-40 text-[19px] font-normal w-[200px] ">
+                    Máy lọc nước giá rẻ
+                  </span>
+                  <strong class="absolute left-4 top-48 text-[15px] font-normal w-[200px] text-blue-500">
+                    Giá từ 5.490.000đ
+                  </strong>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cate-feature h-[340px] w-full my-8">
+        <div class="px-80 h-full w-full flex justify-center">
+          <div class="h-full w-full min-w-[1200px] rounded-2xl bg-white p-4">
+            <div class="flex justify-between">
+                <p class="text-[24px] font-medium">DANH MỤC NỔI BẬT</p>
+              <div class="flex items-center">
+                <a href="">
+                  <p class="pr-3 text-[17px]">XEM TẤT CẢ</p>
+                </a>
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+            </div>
+            <div class="swiper cateSwiper h-full  relative p-3">
+              <div class="swiper-wrapper cateWrapper ">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="discount-payonl h-fit w-full my-8">
+        <div class="px-80 flex justify-center">
+          <div class="min-w-[1200px]">
+            <p class="pb-5 text-[23px] font-medium text-white">KHUYẾN MẠI CHỈ CÓ TRÊN ONLINE</p>
+          <img class="rounded-xl" src="https://cdn.tgdd.vn/2023/05/banner/dmx---Desktop-1200x150.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="service-conv h-fit w-full my-8">
+        <div class="px-80  flex justify-center">
+          <div class="w-full h-[250px] min-w-[1200px] p-4 bg-white rounded-2xl  ">
+            
+              <p class="text-[23px] font-medium">DỊCH VỤ TIỆN ÍCH</p>
+
+              <div class="flex justify-between items-center h-full gap-3">
+                <div class="bg-blue-200 rounded-xl h-4/6 mb-6 w-72 p-4">
+                    <a href="">
+                      <div class="flex items-center gap-5">
+                        <img class="h-10" src="./image/Dự án mới.png" alt="">
+                      <p class="text-[20px]">Mua mã thẻ cào</p>
+                      </div>
+                      <p class="text-[18px] ml-14">
+                        <span class="font-medium text-red-500">Giảm 2%</span>
+                        cho mệnh giá 100.000 trở lên
+                      </p>
+                    </a>
+                </div>
+
+                <div class="bg-orange-200 rounded-xl h-4/6 mb-6 w-72 p-4">
+                  
+                  <a href="">
+                    <div class="flex items-center gap-5">
+                      <img class="h-10" src="./image/Dự án mới (1).png" alt="">
+                    <p class="text-[20px]">Dịch vụ đóng tiền</p>
+                    </div>
+                    <p class="text-[18px] ml-14">
+                      Điện, Nước, Internet, Cước điện thoại trả sau
+                    </p>
+                  </a>
+                
+              </div>
+
+              <div class="bg-red-200 rounded-xl h-4/6 mb-6 w-72 p-4">
+                  
+                <a href="">
+                  <div class="flex items-center gap-5">
+                    <img class="h-10" src="./image/Dự án mới (2).png" alt="">
+                  <p class="text-[20px]">Mua thẻ game</p>
+                  </div>
+                  <p class="text-[18px] ml-14">
+                    <span class="font-medium text-red-500">Giảm 2%</span>
+                    cho tất cả nhà mạng áp dụng từ mệnh giá 300.000 trở lên
+                  </p>
+                </a>
+              
+            </div>
+
+            <div class="bg-green-200 rounded-xl h-4/6 mb-6 w-72 p-4">
+                  
+              <a href="">
+                <div class="flex items-center gap-5">
+                  <img class="h-10" src="./image/Dự án mới (3).png" alt="">
+                <p class="text-[20px]">Dịch vụ tận tâm</p>
+                </div>
+                <p class="text-[18px] ml-16">
+                  Vệ sinh điều hòa - bảo dưỡng máy lọc nước
+                </p>
+              </a>
+            
+          </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="option-filter h-fit w-full my-8">
+        <div class="px-80  flex justify-center">
+          <div class="optionWrapper w-full h-[70px] min-w-[1200px] flex gap-x-5">
+            
+          </div>
+        </div>
+      </div>
+      <div class="products h-fit w-full my-8">
+        <div class="px-80  flex justify-center">
+          <div class="productWrapper w-full h-fit min-w-[1200px] grid grid-cols-5 gap-4 ">
+              
+              
+          </div>
+        </div>
+      </div>
+      <div class="h-fit w-full my-8">
+        <div class="px-80  flex justify-center">
+          <div class="w-full h-[210px] min-w-[1200px] grid grid-cols-2 gap-4  ">
+              <div class="bg-white w-full rounded-2xl p-4">
+                <div class="flex justify-between items-center">
+                  <p class="text-[23px] font-semibold">TƯ VẤN CHỌN MUA</p>
+                  <a class="flex gap-3 items-center font-light" href="">
+                    <p>XEM TẤT CẢ</p>
+                    <i class="fa-solid fa-angle-right"></i>
+                  </a>
+                  
+                </div>
+                <div class="h-fit pt-4">
+                  <div class="swiper adviseSwipwer">
+                    <div class="swiper-wrapper adviseWrapper">
+
+                      
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white w-full rounded-2xl p-4">
+                <div class="flex justify-between items-center">
+                  <p class="text-[23px] font-semibold">CHỈ CÓ TẠI ĐIỆN MÁY XANH</p>
+                </div>
+                <div class="flex pt-3 justify-between">
+                  <a href="">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/06/banner/HT-270-x150-270x150.png" alt="">
+                  </a>
+                  <a href="">
+                    <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/06/banner/270x150-270x150-1.png" alt="">
+                  </a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-fit w-full my-8">
+        <div class="px-80  flex justify-center">
+          <div class="w-full h-[290px] min-w-[1200px] ">
+            <div class=" w-full h-full py-4">
+              <p class="text-[23px] font-semibold">CHUYÊN TRANG THƯƠNG HIỆU</p>
+              <div class="h-[215px] pt-5 relative">
+                <div class="swiper-button-prev TMbtn_Prev btnL_shadow after:visible h-[50px] w-[50px] bg-[rgba(252,251,251,0.81)] rounded-full translate-x-[-70%] hover:opacity-80">
+                  <i class="fa-solid fa-angle-left text-gray-700"></i>
+                </div>
+                <div class="swiper-button-next TMbtn_Next btnR_shadow after:visible h-[50px] w-[50px] bg-[rgba(252,251,251,0.81)] rounded-full translate-x-[70%] hover:opacity-80">
+                  <i class="fa-solid fa-angle-right text-gray-700"></i>
+                </div>
+                <div class="swiper tradeMarkSwiper">
+                  <div class="swiper-wrapper tradeMarkWraper">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-fit w-full my-8">
+        <div class="px-80  flex justify-center">
+          <div class="w-full h-[290px] min-w-[1200px] ">
+            <div class=" w-full h-full py-4">
+              <p class="text-[23px] font-semibold">CHUYÊN TRANG THƯƠNG HIỆU</p>
+              <div class="h-[215px] pt-5 relative">
+                <div class="swiper-button-prev NCbtn_Prev btnL_shadow after:visible h-[50px] w-[50px] bg-[rgba(252,251,251,0.81)] rounded-full translate-x-[-70%] hover:opacity-80">
+                  <i class="fa-solid fa-angle-left text-gray-700"></i>
+                </div>
+                <div class="swiper-button-next NCbtn_Next btnR_shadow after:visible h-[50px] w-[50px] bg-[rgba(252,251,251,0.81)] rounded-full translate-x-[70%] hover:opacity-80">
+                  <i class="fa-solid fa-angle-right text-gray-700"></i>
+                </div>
+                <div class="swiper newChainSwiper">
+                  <div class="swiper-wrapper newChainWraper">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="adOverlay hidden">
+        <a class="fixed top-[195px] bannerLeft z-[999]" href="" >
+          <img class="h-[300px]" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/07/banner/right-80x270.png" alt="">
+        </a>
+        <a class="fixed top-[195px] bannerRight z-[999]" href="">
+          <img class="h-[300px]" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/07/banner/Left-80x270.png" alt="">
+        </a>
+      </div>
+      <div class="bottomSearch h-fit w-full my-8">
+        <div class="px-80  flex justify-center">
+          <div class="w-full h-[130px] min-w-[1200px] ">
+            <div class="w-full h-full py-4">
+              <p class="text-[23px] font-semibold">TÌM KIẾM NHIỀU</p>
+              <p class="flex gap-4 flex-wrap pt-4 text-[14px]">
+                <a href=""><span>iPhone 15</span></a>
+                <a href=""><span>xiaomi</span></a>
+                <a href=""><span>vivo</span></a>
+                <a href=""><span>samsung</span></a>
+                <a href=""><span>oppo</span></a>
+                <a href=""><span>nồi cơm điện</span></a>
+                <a href=""><span>tivi</span></a>
+                <a href=""><span>tủ lạnh</span></a>
+                <a href=""><span>quạt cháy</span></a>
+                <a href=""><span>máy bơm</span></a>
+                <a href=""><span>nhôm đồng </span></a>
+                <a href=""><span>sắt gỉ</span></a>
+                <a href=""><span>laptop gaming</span></a>
+                <a href=""><span>bình lọc nước</span></a>
+                <a href=""><span>ghế massage</span></a>
+                <a href=""><span>đồng hồ thông minh cho trẻ em</span></a>
+                <a href=""><span>robot hút bụi</span></a>
+                <a href=""><span>máy cắt mika</span></a>
+                <a href=""><span>máy pha cà phê</span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chatOverlay fixed bottom-7 right-7 flex flex-col items-end gap-7 z-[9999]">
+        <div class="boxChat h-[700px] w-[440px] bg-white overflow-hidden rounded-3xl hidden">
+          <div class="p-5 flex justify-between bg-blue-500 ">
+            <div class="flex gap-5 items-center">
+              <div class="relative">
+                <img class="rounded-full h-12" src="https://s160-ava-talk.zadn.vn/9/e/3/4/1/160/003845b2e2b663e7691aa3db37b1f6cc.jpg" alt="">
+                <div class="active-oa dot-ol ">
+                </div>
+              </div>
+              <p class="text-[22px] text-white">Điện máy XANH</p>
+            </div>
+            <div class="flex gap-5">
+              <div class="dropBtn h-10 w-10 bg-blue-400 rounded-full flex items-center justify-center cursor-pointer hover:bg-blue-200">
+                <div class="flex gap-[2px]">
+                  <div class="h-[4px] w-[4px] bg-white rounded-full"></div>
+                <div class="h-[4px] w-[4px] bg-white rounded-full"></div>
+                <div class="h-[4px] w-[4px] bg-white rounded-full"></div>
+                </div>
+              </div>
+              <div class="hide-chat h-10 w-10 bg-blue-400 rounded-full flex items-center justify-center text-white cursor-pointer hover:bg-blue-200" onclick="App.HandleZaloClick()">
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+            </div>
+          </div>
+          <!-- content -->
+          <div class="p-5 bg-blue-500 ">
+            <p class="text-white text-[23px] font-semibold">Xin Chào !</p>
+            <p class="text-white text-[17px] font-normal">Rất vui khi được hỗ trợ bạn.</p>
+          </div>
+          <!-- maint -->
+          <div class="p-5 h-[60%] flex flex-col gap-5 justify-center items-center">
+            <p class="text-gray-500 text-[19px] ">Bắt đầu trò chuyện với Điện máy XANH</p>
+            <div class="bg-blue-500 h-16 w-full rounded-xl flex items-center justify-center">
+              <p class="font-semibold text-[20px] text-white">Chat bằng Zalo</p>
+            </div>
+            <div class="bg-gray-200 h-16 w-full rounded-xl flex items-center justify-center">
+              <p class="font-semibold text-[20px] text-gray-900">Chat bằng Zalo</p>
+            </div>
+          </div>
+        </div>
+        <div class="zaloIcon" onclick="App.HandleZaloClick()">
+          <img src="https://page.widget.zalo.me/static/images/2.0/Logo.svg" alt="">
+        </div>
+        
+      </div>
+    </div>
+    <div class="footer h-[290px] ">
+      <div class="top-footer h-[200px] bg-white border-t-[1px] border-gray-300 ">
+        <div class="px-80 h-full w-full flex justify-center">
+          <div class= "h-full w-full min-w-[1200px] p-4">
+            <div class="flex flex-col gap-3 text-[14px] float-left w-[24%]">
+              <a href=""><p>Tích điểm quà tặng VIP</p></a>
+              <a href=""><p>DV vệ sinh máy lạnh</p></a>
+              <a href=""><p>Lịch sử mua hàng</p></a>
+              <a href=""><p>Tìm hiểu về mua trả góp</p></a>
+              <a href=""><p>Tích điểm quà tặng VIP</p></a>
+            </div>
+            <div class="flex flex-col gap-3 text-[14px] float-left w-[19%]">
+              <a href=""><p>Giới thiệu công ty (MWG.vn)</p></a>
+              <a href=""><p>Tuyển dụng</p></a>
+              <a href=""><p>Gửi góp ý, khiếu nại</p></a>
+              <a href=""><p>Tìm siêu thị (3371 shop)</p></a>
+              <a href=""><p>Xem bản mobile</p></a>
+            </div>
+            <div class="flex flex-col gap-3 text-[14px] float-left w-[28%]">
+              <p><span class="font-bold">Tổng đài hỗ trợ </span>(Miễn phí gọi)</p>
+              <p>Gọi mua: <span class="font-bold text-blue-500 cursor-pointer">1800.1061</span> (7:30 - 22:00)</p>
+              <p>Gọi mua: <span class="font-bold text-blue-500 cursor-pointer">1800.1061</span> (7:30 - 22:00)</p>
+              <p>Gọi mua: <span class="font-bold text-blue-500 cursor-pointer">1800.1061</span> (7:30 - 22:00)</p>
+              
+            </div>
+            <div class="flex flex-col gap-3 text-[14px] float-left w-[29%]">
+              <div class=" w-full flex flex-col gap-3">
+                <div class="flex gap-3">
+                  <a class="flex gap-2 items-center text-blue-500" href="">
+                    <img class="h-[18px] " src="./image/Dự án mới (17).png" alt="">
+                    <p>1975.1K fan</p>
+                  </a>
+                  <a class="flex gap-2 items-center text-blue-500" href="">
+                    <img class="h-[18px] " src="./image/Dự án mới (16).png" alt="">
+                    <p>1975.1K fan</p>
+                  </a>
+                  <a class="flex gap-2 items-center text-blue-500" href="">
+                    <img class="h-[18px] " src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/mwgcart/mwg-site/ContentMwg/images/icon_zalo.png" alt="">
+                    <p>1975.1K fan</p>
+                  </a>
+                </div>
+                <div class="flex">
+                  <a href="">
+                    <img src="./image/Dự án mới (12).png" alt="">
+                  </a>
+                  <a href="">
+                    <img src="./image/Dự án mới (14).png" alt="">
+                  </a>
+                  <a href="">
+                    <img src="./image/Dự án mới (13).png" alt="">
+                  </a>
+                  <a href="">
+                    <img src="./image/Dự án mới (15).png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class=" w-full">
+                <p>Website cùng tập đoàn</p>
+                <div class="grid grid-cols-4 grid-rows-2 gap-2 pt-3">
+                  <a href=""><img src="./image/Dự án mới (4).png" alt=""></a>
+                  <a href=""><img src="./image/Dự án mới (5).png" alt=""></a>
+                  <a href=""><img src="./image/Dự án mới (6).png" alt=""></a>
+                  <a href=""><img src="./image/Dự án mới (7).png" alt=""></a>
+                  <a href=""><img src="./image/Dự án mới (8).png" alt=""></a>
+                  <a href=""><img src="./image/Dự án mới (9).png" alt=""></a>
+                  <a href=""><img src="./image/Dự án mới (10).png" alt=""></a>
+                  <a href=""><img src="./image/Dự án mới (11).png" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyRight w-full my-2">
+        <div class="px-80 flex justify-center">
+          <div class="w-full min-w-[1200px]">
+            <p class="text-[13px]">
+              © 2018. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH & ĐT TP.HCM cấp ngày 02/01/2007. GPMXH: 21/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 11/01/2021. <br>
+    Địa chỉ: 128 Trần Quang Khải, P.Tân Định, Q.1, TP.Hồ Chí Minh. Địa chỉ liên hệ và gửi chứng từ: Lô T2-1.2, Đường D1, Đ. D1, P.Tân Phú, TP.Thủ Đức, TP.Hồ Chí Minh. Điện thoại: 028 38125960. Email: cskh@thegioididong.com. Chịu trách nhiệm nội dung: Huỳnh Văn Tốt. Email: Tot.huynhvan@thegioididong.com. <a class="text-blue-500" href="">Xem chính sách sử dụng</a>
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="maint.js"></script>
+  </body>
+</html>
