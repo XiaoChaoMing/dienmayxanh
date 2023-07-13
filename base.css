@@ -46,3 +46,22 @@ input[type="range"]::-webkit-slider-thumb {
   bottom: 1%;
   right: calc((100% - 50px) / 2);
 }
+::-webkit-scrollbar {
+  display: none;
+}
+.arrow:after {
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+
+  border-bottom: 10px solid white;
+}
+.ftOverlay {
+  position: relative;
+  z-index: 9999;
+  border-color: blue !important;
+  background-color: white;
+}

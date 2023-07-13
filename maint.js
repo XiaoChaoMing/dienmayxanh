@@ -1375,6 +1375,7 @@ const App = {
         "https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/07/banner/760x400-760x400.jpg",
     },
   ],
+
   RenderVoucherList: function (list) {
     const swiperSlider = list.map((voucher) => {
       return `

@@ -231,6 +231,83 @@ const App = {
       contents: "Giá rẻ quá: 10.990.000₫",
     },
   ],
+  productList: [
+    {
+      company: "sam sung",
+      screenSize: "32",
+      price: "10.000.000",
+      resolution: "HD",
+      type: "smart TV",
+      utilities: "Chơi game trên tv",
+      OS: "android",
+      name: "Sony Google TV KD-43X75K",
+    },
+    {
+      company: "sony",
+      screenSize: "40",
+      price: "10.000.000",
+      resolution: "Full HD",
+      type: "TV OLED",
+      utilities: "Chơi game trên tv",
+      OS: "webOS",
+      name: "TCL Google TV 58P635",
+    },
+    {
+      company: "LG",
+      screenSize: "42",
+      price: "10.000.000",
+      resolution: "4K",
+      type: "TV QLED",
+      utilities: "Chơi game trên tv",
+      OS: "webOS",
+      name: "Samsung Smart TV Crystal UHD UA50AU8100",
+    },
+  ],
+  categoryList: function (
+    company,
+    screenSize,
+    price,
+    resolution,
+    type,
+    utilities,
+    OS
+  ) {
+    this.company = company;
+    this.screenSize = screenSize;
+    this.price = price;
+    this.resolution = resolution;
+    this.type = type;
+    this.utilities = utilities;
+    this.OS = OS;
+  },
+  testOpp: function () {
+    const fillter = new this.categoryList([], ["40"]);
+    console.log(fillter);
+    return fillter;
+  },
+  fillterProduct: function () {
+    const products = [
+      ...new Set(
+        this.productList.map((product) => {
+          return product;
+        })
+      ),
+    ];
+    console.log(products);
+    const fillterList = this.testOpp();
+    console.log(fillterList);
+
+    const newProduct = products.filter((item) => {
+      for (var key in fillterList) {
+        if (
+          Array.isArray(fillterList[key]) &&
+          fillterList[key].includes(item[key])
+        )
+          return true;
+      }
+    });
+    console.log(newProduct);
+  },
   RenderTopcarosel: function () {
     const slider = this.vouncherList.map((item) => {
       return `
@@ -282,6 +359,22 @@ const App = {
       swiperList.join("")
     );
   },
+  FilterHandleClick: function () {
+    $(".maint-filter").addEventListener("click", (e) => {
+      $(".fillterModal").classList.toggle("hidden");
+      document.body.classList.add("overflow-hidden");
+      window.scrollTo({
+        top: 870,
+        behavior: "smooth",
+      });
+      $(".maint-filter").classList.add("ftOverlay");
+    });
+    $(".fillterModal").addEventListener("click", (e) => {
+      e.target.classList.toggle("hidden");
+      document.body.classList.remove("overflow-hidden");
+      $(".maint-filter").classList.remove("ftOverlay");
+    });
+  },
   SwiperMethod: function () {
     var swiper = new Swiper(".topBanner", {
       loop: true,
@@ -312,8 +405,8 @@ const App = {
         640: { slidesPerView: 5, spaceBetween: 10 },
       },
       navigation: {
-        nextEl: ".carosel-next",
-        prevEl: ".carosel-prev",
+        nextEl: ".hotproduct-next",
+        prevEl: ".hotproduct-prev",
       },
     });
   },
@@ -322,6 +415,9 @@ const App = {
     this.RenderTopcarosel();
     this.RenderhotProduct(this.HotProductList);
     this.SwiperMethod();
+    this.fillterProduct();
+    this.FilterHandleClick();
+    this.testOpp();
   },
 };
 App.Start();

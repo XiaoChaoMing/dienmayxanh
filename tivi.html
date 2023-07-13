@@ -16,7 +16,7 @@
     ></script>
     <title>Tivi gia re</title>
   </head>
-  <body class="overflow-hidden">
+  <body>
     <div class="header-topBar w-full bg-blue-600">
       <div class="px-80 w-full flex justify-center items-center">
         <div class="swiper topBanner min-w-[1200px]">
@@ -313,29 +313,90 @@
                 alt=""
               />
             </div>
-            <div class="h-[400px] bg-blue-300 p-3 rounded-b-lg relative">
+            <div class="h-[420px] bg-blue-300 p-3 rounded-b-lg relative">
               <div
-                class="swiper-button-next carosel-next after:hidden bg-white/70 hidden sm:block"
+                class="swiper-button-next hotproduct-next after:hidden bg-white/70 hidden sm:block"
               >
                 <i
                   class="fa-solid fa-angle-right text-gray-600/75 sm:text-[40px] hover:text-white/75"
                 ></i>
               </div>
               <div
-                class="swiper-button-prev carosel-prev after:hidden bg-white/70 hidden sm:block"
+                class="swiper-button-prev hotproduct-prev after:hidden bg-white/70 hidden sm:block"
               >
                 <i
                   class="fa-solid fa-angle-left text-gray-600/75 sm:text-[40px] hover:text-white/75"
                 ></i>
               </div>
-              <div class="swiper hotProductSwiper">
+              <div class="swiper hotProductSwiper h-[100%]">
                 <div class="swiper-wrapper hotProductWraper"></div>
               </div>
             </div>
           </div>
+          <div class="box-fillter w-full my-4 relative">
+            <div class="w-full overflow-x-scroll">
+              <div class="flex gap-3 min-w-max font-light">
+                <div
+                  class="maint-filter w-fit p-3 flex items-center gap-2 border-[1px] border-gray-800/25 rounded-lg"
+                >
+                  <i class="fa-solid fa-filter"></i>
+                  <p>Bộ lọc</p>
+                </div>
+                <div
+                  class="filter-item w-fit p-3 flex items-center gap-2 border-[1px] border-gray-800/25 rounded-lg"
+                >
+                  <p>Hãng</p>
+                  <i class="fa-solid fa-caret-down"></i>
+                  <div
+                    class="h-[800px] w-full sm:w-[1000px] bg-white/20 absolute z-50 left-0 top-[calc(50%+40px)] arrow"
+                  ></div>
+                </div>
+                <div
+                  class="filter-item w-fit p-3 flex items-center gap-2 border-[1px] border-gray-800/25 rounded-lg"
+                >
+                  <p>Kích cỡ màn hình</p>
+                  <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div
+                  class="filter-item w-fit p-3 flex items-center gap-2 border-[1px] border-gray-800/25 rounded-lg"
+                >
+                  <p>Giá</p>
+                  <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div
+                  class="filter-item w-fit p-3 flex items-center gap-2 border-[1px] border-gray-800/25 rounded-lg"
+                >
+                  <p>Độ phân giải</p>
+                  <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div
+                  class="filter-item w-fit p-3 flex items-center gap-2 border-[1px] border-gray-800/25 rounded-lg"
+                >
+                  <p>Loại tivi</p>
+                  <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div
+                  class="filter-item w-fit p-3 flex items-center gap-2 border-[1px] border-gray-800/25 rounded-lg"
+                >
+                  <p>Tiện ích</p>
+                  <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div
+                  class="filter-item w-fit p-3 flex items-center gap-2 border-[1px] border-gray-800/25 rounded-lg"
+                >
+                  <p>Hệ điều hành</p>
+                  <i class="fa-solid fa-caret-down"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="test h-[1000px] w-full bg-blue-400"></div>
         </div>
       </div>
     </div>
+    <div
+      class="fillterModal w-full h-[1000px] fixed top-0 bg-gray-950/30 z-[99] hidden"
+    ></div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="tivi.js"></script>
   </body>
