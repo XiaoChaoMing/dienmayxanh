@@ -61,6 +61,176 @@ const App = {
       img: "https://cdn.tgdd.vn/2023/06/banner/800x200-800x200-47.png",
     },
   ],
+  HotProductList: [
+    {
+      name: "Samsung Smart TV Crystal UHD UA55AU8100",
+      className: "TV",
+      image:
+        "https://cdn.tgdd.vn/Products/Images/1942/235792/led-4k-samsung-ua55au8100-221122-040640-550x340.jpg",
+      sticker: "https://cdn.tgdd.vn/2023/05/campaign/Label-200x200.png",
+      installment: "0%",
+      vouncher: "",
+      price: "10.990.000₫",
+      sale: "13.400.000₫ -17%",
+      rate: 4,
+      rateQuantity: 328,
+      contents: "Giá rẻ quá: 10.990.000₫",
+    },
+    {
+      name: "Samsung Smart TV Crystal UHD UA55AU8100",
+      className: "TV",
+      image:
+        "https://cdn.tgdd.vn/Products/Images/1942/235792/led-4k-samsung-ua55au8100-221122-040640-550x340.jpg",
+      sticker: "https://cdn.tgdd.vn/2023/05/campaign/Label-200x200.png",
+      installment: "0%",
+      vouncher: "",
+      price: "10.990.000₫",
+      sale: "13.400.000₫ -17%",
+      rate: 4,
+      rateQuantity: 328,
+      contents: "Giá rẻ quá: 10.990.000₫",
+    },
+    {
+      name: "Samsung Smart TV Crystal UHD UA55AU8100",
+      className: "TV",
+      image:
+        "https://cdn.tgdd.vn/Products/Images/1942/235792/led-4k-samsung-ua55au8100-221122-040640-550x340.jpg",
+      sticker: "https://cdn.tgdd.vn/2023/05/campaign/Label-200x200.png",
+      installment: "0%",
+      vouncher: "",
+      price: "10.990.000₫",
+      sale: "13.400.000₫ -17%",
+      rate: 4,
+      rateQuantity: 328,
+      contents: "Giá rẻ quá: 10.990.000₫",
+    },
+    {
+      name: "Samsung Smart TV Crystal UHD UA55AU8100",
+      className: "TV",
+      image:
+        "https://cdn.tgdd.vn/Products/Images/1942/235792/led-4k-samsung-ua55au8100-221122-040640-550x340.jpg",
+      sticker: "https://cdn.tgdd.vn/2023/05/campaign/Label-200x200.png",
+      installment: "0%",
+      vouncher: "",
+      price: "10.990.000₫",
+      sale: "13.400.000₫ -17%",
+      rate: 4,
+      rateQuantity: 328,
+      contents: "Giá rẻ quá: 10.990.000₫",
+    },
+    {
+      name: "Samsung Smart TV Crystal UHD UA55AU8100",
+      className: "TV",
+      image:
+        "https://cdn.tgdd.vn/Products/Images/1942/235792/led-4k-samsung-ua55au8100-221122-040640-550x340.jpg",
+      sticker: "https://cdn.tgdd.vn/2023/05/campaign/Label-200x200.png",
+      installment: "0%",
+      vouncher: "",
+      price: "10.990.000₫",
+      sale: "13.400.000₫ -17%",
+      rate: 4,
+      rateQuantity: 328,
+      contents: "Giá rẻ quá: 10.990.000₫",
+    },
+    {
+      name: "Samsung Smart TV Crystal UHD UA55AU8100",
+      className: "TV",
+      image:
+        "https://cdn.tgdd.vn/Products/Images/1942/235792/led-4k-samsung-ua55au8100-221122-040640-550x340.jpg",
+      sticker: "https://cdn.tgdd.vn/2023/05/campaign/Label-200x200.png",
+      installment: "0%",
+      vouncher: "",
+      price: "10.990.000₫",
+      sale: "13.400.000₫ -17%",
+      rate: 4,
+      rateQuantity: 328,
+      contents: "Giá rẻ quá: 10.990.000₫",
+    },
+    {
+      name: "Samsung Smart TV Crystal UHD UA55AU8100",
+      className: "TV",
+      image:
+        "https://cdn.tgdd.vn/Products/Images/1942/235792/led-4k-samsung-ua55au8100-221122-040640-550x340.jpg",
+      sticker: "https://cdn.tgdd.vn/2023/05/campaign/Label-200x200.png",
+      installment: "0%",
+      vouncher: "",
+      price: "10.990.000₫",
+      sale: "13.400.000₫ -17%",
+      rate: 4,
+      rateQuantity: 328,
+      contents: "Giá rẻ quá: 10.990.000₫",
+    },
+    {
+      name: "Samsung Smart TV Crystal UHD UA55AU8100",
+      className: "TV",
+      image:
+        "https://cdn.tgdd.vn/Products/Images/1942/235792/led-4k-samsung-ua55au8100-221122-040640-550x340.jpg",
+      sticker: "https://cdn.tgdd.vn/2023/05/campaign/Label-200x200.png",
+      installment: "0%",
+      vouncher: "",
+      price: "10.990.000₫",
+      sale: "13.400.000₫ -17%",
+      rate: 4,
+      rateQuantity: 328,
+      contents: "Giá rẻ quá: 10.990.000₫",
+    },
+    {
+      name: "Samsung Smart TV Crystal UHD UA55AU8100",
+      className: "TV",
+      image:
+        "https://cdn.tgdd.vn/Products/Images/1942/235792/led-4k-samsung-ua55au8100-221122-040640-550x340.jpg",
+      sticker: "https://cdn.tgdd.vn/2023/05/campaign/Label-200x200.png",
+      installment: "0%",
+      vouncher: "",
+      price: "10.990.000₫",
+      sale: "13.400.000₫ -17%",
+      rate: 4,
+      rateQuantity: 328,
+      contents: "Giá rẻ quá: 10.990.000₫",
+    },
+    {
+      name: "Samsung Smart TV Crystal UHD UA55AU8100",
+      className: "TV",
+      image:
+        "https://cdn.tgdd.vn/Products/Images/1942/235792/led-4k-samsung-ua55au8100-221122-040640-550x340.jpg",
+      sticker: "https://cdn.tgdd.vn/2023/05/campaign/Label-200x200.png",
+      installment: "0%",
+      vouncher: "",
+      price: "10.990.000₫",
+      sale: "13.400.000₫ -17%",
+      rate: 4,
+      rateQuantity: 328,
+      contents: "Giá rẻ quá: 10.990.000₫",
+    },
+    {
+      name: "Samsung Smart TV Crystal UHD UA55AU8100",
+      className: "TV",
+      image:
+        "https://cdn.tgdd.vn/Products/Images/1942/235792/led-4k-samsung-ua55au8100-221122-040640-550x340.jpg",
+      sticker: "https://cdn.tgdd.vn/2023/05/campaign/Label-200x200.png",
+      installment: "0%",
+      vouncher: "",
+      price: "10.990.000₫",
+      sale: "13.400.000₫ -17%",
+      rate: 4,
+      rateQuantity: 328,
+      contents: "Giá rẻ quá: 10.990.000₫",
+    },
+    {
+      name: "Samsung Smart TV Crystal UHD UA55AU8100",
+      className: "TV",
+      image:
+        "https://cdn.tgdd.vn/Products/Images/1942/235792/led-4k-samsung-ua55au8100-221122-040640-550x340.jpg",
+      sticker: "https://cdn.tgdd.vn/2023/05/campaign/Label-200x200.png",
+      installment: "0%",
+      vouncher: "",
+      price: "10.990.000₫",
+      sale: "13.400.000₫ -17%",
+      rate: 4,
+      rateQuantity: 328,
+      contents: "Giá rẻ quá: 10.990.000₫",
+    },
+  ],
   RenderTopcarosel: function () {
     const slider = this.vouncherList.map((item) => {
       return `
@@ -75,6 +245,42 @@ const App = {
         `;
     });
     $(".caroselWraper").insertAdjacentHTML("afterbegin", slider.join(""));
+  },
+  RenderhotProduct: function (lists) {
+    const swiperList = lists.map((item) => {
+      return `
+      <div class="swiper-slide h-full bg-white rounded-xl group min-w-[232px]">
+      <a href="" class="flex flex-col py-3 h-full">
+        <div class="w-fit bg-gray-100 p-1 ml-3">
+          <p class="text-[11px]">Trả góp ${item.installment}</p>
+        </div>
+        <div class="basis-3/5 px-3 flex items-center overflow-hidden relative ">
+          <img class="h-auto group-hover:translate-y-[-10px] transition duration-500 ease-in-out"src="${item.image}" alt="">
+          <img class="absolute h-10 bottom-2 left-3 group-hover:translate-y-[-16px] transition duration-500 ease-in-out" src="${item.sticker}" alt="">
+        </div>
+          
+          <div class="flex flex-col w-full justify-start px-3">
+            <div class="flex items-center bg-gradient-to-r from-[#faab08] to-[#d42611] w-fit pr-3 rounded-full">
+              <img class="h-5" src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2020/10/content/icon5-50x50.png" alt="">
+              <p class="text-[11px] text-white leading-[19px] pl-1">GIÁ RẺ QUÁ</p>
+            </div>
+            <p class="text-[15px] py-1 group-hover:text-blue-500">${item.name}</p>
+            <p class="py-1 text-red-700 font-semibold text-[20px]">${item.price}</p>
+            <p class="">${item.contents}</p>
+            <div class="w-full h-full flex items-center gap-x-1">
+              <p class="font-medium text-orange-500">4.3</p>
+              <img class="w-4 h-4" src="./image/star.png" alt="">
+              <p class="text-gray-400">(510)</p>
+            </div>
+          </div>
+        </a>
+    </div>
+      `;
+    });
+    $(".hotProductWraper").insertAdjacentHTML(
+      "afterbegin",
+      swiperList.join("")
+    );
   },
   SwiperMethod: function () {
     var swiper = new Swiper(".topBanner", {
@@ -99,10 +305,22 @@ const App = {
         prevEl: ".carosel-prev",
       },
     });
+    var swiper3 = new Swiper(".hotProductSwiper", {
+      slidesPerView: 2,
+      spaceBetween: 10,
+      breakpoints: {
+        640: { slidesPerView: 5, spaceBetween: 10 },
+      },
+      navigation: {
+        nextEl: ".carosel-next",
+        prevEl: ".carosel-prev",
+      },
+    });
   },
 
   Start: function () {
     this.RenderTopcarosel();
+    this.RenderhotProduct(this.HotProductList);
     this.SwiperMethod();
   },
 };

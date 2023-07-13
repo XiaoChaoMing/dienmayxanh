@@ -157,7 +157,7 @@
         </div>
       </div>
       <div
-        class="bm-search sm:hidden w-[95%] flex justify-center gap-3 items-center bg-white rounded-md p-2"
+        class="bm-search sm:hidden min-w-[320px] w-[95%] flex justify-center gap-3 items-center bg-white rounded-md p-2"
       >
         <input
           class="w-[90%]"
@@ -256,12 +256,10 @@
         </div>
       </div>
     </div>
-    <div class="maint-containt w-full min-w-[425px]">
-      <div
-        class="maint-wraper w-full h-96 px-0 sm:px-80 flex flex-col items-center"
-      >
+    <div class="maint-containt w-full min-w-[320px]">
+      <div class="maint-wraper w-full px-0 sm:px-80 flex flex-col items-center">
         <div class="w-full h-full min-w-[425px] sm:min-w-[1200px]">
-          <div class="top-carosel w-full flex flex-row gap-3">
+          <div class="top-carosel w-full flex flex-row gap-3 my-0 sm:my-4">
             <div class="w-[425px] sm:w-[800px] h-full">
               <div class="w-full">
                 <div class="swiper caroselSwiper">
@@ -287,16 +285,37 @@
               <div class="w-full flex flex-col gap-2">
                 <div>
                   <img
+                    class="w-full"
                     src="https://cdn.tgdd.vn/2022/06/banner/TraGop390-97-390x97-2-390x97-2.png"
                     alt=""
                   />
                 </div>
                 <div>
                   <img
+                    class="w-full"
                     src="https://cdn.tgdd.vn/2022/07/banner/TV-Trung-bay-390x97-1.png"
                     alt=""
                   />
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="hot-product w-full">
+            <div class="">
+              <img
+                class="hidden sm:block w-full"
+                src="https://cdn.tgdd.vn/2023/05/banner/Tagline---Desk-1200x80-1.png"
+                alt=""
+              />
+              <img
+                class="block sm:hidden"
+                src="https://cdn.tgdd.vn/2023/05/banner/Tagline---MB-720x120-1.png"
+                alt=""
+              />
+            </div>
+            <div class="h-[500px] bg-blue-300">
+              <div class="swiper hotProductSwiper">
+                <div class="swiper-wrapper hotProductWraper"></div>
               </div>
             </div>
           </div>
