@@ -335,21 +335,117 @@
           </div>
           <div class="box-fillter w-full my-4 relative">
             <div class="w-full overflow-x-scroll">
-              <div class="flex gap-3 min-w-max font-light">
+              <div
+                class="flex gap-3 min-w-max font-light px-2 text-[10px] sm:text-[14px] sm:px-0"
+              >
                 <div
                   class="maint-filter w-fit p-3 flex items-center gap-2 border-[1px] border-gray-800/25 rounded-lg"
                 >
                   <i class="fa-solid fa-filter"></i>
                   <p>Bộ lọc</p>
+                  <div
+                    class="filter-overlay sm:h-[800px] h-[900px] sm:w-[1000px] w-full bg-white fixed sm:absolute z-[999] left-0 top-0 sm:top-[calc(50%+39px)] hidden overflow-scroll sm:overflow-hidden"
+                  >
+                    <div
+                      class="w-full bg-white closeBtn sm:absolute fixed right-0 flex justify-end"
+                    >
+                      <p
+                        class="w-fit px-4 py-2 border-[1px] border-gray-800/25 rounded-lg cursor-pointer"
+                      >
+                        <i class="fa-solid fa-xmark"></i>
+                        close
+                      </p>
+                    </div>
+
+                    <div class="h-[1500px] mt-7">
+                      <!-- brank filter -->
+                      <div class="brand pt-6 px-4">
+                        <p class="sm:text-[20px] text-[15px] font-semibold">
+                          Hãng
+                        </p>
+                        <div class="flex gap-3 pt-3 flex-wrap">
+                          <div
+                            class="p-2 w-20 flex justify-center border-[1px] border-gray-800/25 rounded-lg cursor-pointer"
+                          >
+                            <img
+                              class="h-6"
+                              src="https://cdn.tgdd.vn/Brand/2/Samsung1942-b_51.png"
+                              alt=""
+                            />
+                          </div>
+                          <div
+                            class="p-2 w-20 flex justify-center border-[1px] border-gray-800/25 rounded-lg cursor-pointer"
+                          >
+                            <img
+                              class="h-6"
+                              src="https://cdn.tgdd.vn/Brand/2/Sony1942-b_57.png"
+                              alt=""
+                            />
+                          </div>
+                          <div
+                            class="p-2 w-20 flex justify-center border-[1px] border-gray-800/25 rounded-lg cursor-pointer"
+                          >
+                            <img
+                              class="h-6"
+                              src="https://cdn.tgdd.vn/Brand/2/LG1942-b_16.png"
+                              alt=""
+                            />
+                          </div>
+                          <div
+                            class="p-2 w-20 flex justify-center border-[1px] border-gray-800/25 rounded-lg cursor-pointer"
+                          >
+                            <img
+                              class="h-6"
+                              src="https://cdn.tgdd.vn/Brand/2/Untitled-1-92x40-1.png"
+                              alt=""
+                            />
+                          </div>
+                          <div
+                            class="p-2 w-20 flex justify-center border-[1px] border-gray-800/25 rounded-lg cursor-pointer"
+                          >
+                            <img
+                              class="h-6"
+                              src="https://cdn.tgdd.vn/Brand/2/TCL1942-b_57.png"
+                              alt=""
+                            />
+                          </div>
+                          <div
+                            class="p-2 w-20 flex justify-center border-[1px] border-gray-800/25 rounded-lg cursor-pointer"
+                          >
+                            <img
+                              class="h-6"
+                              src="https://cdn.tgdd.vn/Brand/2/Sharp1942-b_48.png"
+                              alt=""
+                            />
+                          </div>
+                          <div
+                            class="p-2 w-20 flex justify-center border-[1px] border-gray-800/25 rounded-lg cursor-pointer"
+                          >
+                            <img
+                              class="h-6"
+                              src="https://cdn.tgdd.vn/Brand/2/TOSHIBA-200x80-1.png"
+                              alt=""
+                            />
+                          </div>
+                          <div
+                            class="p-2 w-20 flex justify-center border-[1px] border-gray-800/25 rounded-lg cursor-pointer"
+                          >
+                            <img
+                              class="h-6"
+                              src="https://cdn.tgdd.vn/Brand/2/iFFALCON-logo-200x80-1.png"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div
                   class="filter-item w-fit p-3 flex items-center gap-2 border-[1px] border-gray-800/25 rounded-lg"
                 >
                   <p>Hãng</p>
                   <i class="fa-solid fa-caret-down"></i>
-                  <div
-                    class="h-[800px] w-full sm:w-[1000px] bg-white/20 absolute z-50 left-0 top-[calc(50%+40px)] arrow"
-                  ></div>
                 </div>
                 <div
                   class="filter-item w-fit p-3 flex items-center gap-2 border-[1px] border-gray-800/25 rounded-lg"
@@ -396,7 +492,11 @@
     </div>
     <div
       class="fillterModal w-full h-[1000px] fixed top-0 bg-gray-950/30 z-[99] hidden"
-    ></div>
+    >
+      <!-- <div
+        class="overlay-filter h-96 w-[900px] bg-white absolute top-[9%]"
+      ></div> -->
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="tivi.js"></script>
   </body>

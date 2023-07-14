@@ -280,6 +280,102 @@ const App = {
     this.utilities = utilities;
     this.OS = OS;
   },
+  FilterOption: [
+    // brand
+    [
+      {
+        id: 1,
+        name: "Samsung",
+        img: "https://cdn.tgdd.vn/Brand/2/Samsung1942-b_51.png",
+      },
+      {
+        id: 2,
+        name: "Sony",
+        img: "https://cdn.tgdd.vn/Brand/2/Sony1942-b_57.png",
+      },
+      {
+        id: 3,
+        name: "LG",
+        img: "https://cdn.tgdd.vn/Brand/2/LG1942-b_16.png",
+      },
+      {
+        id: 4,
+        name: "Casper",
+        img: "https://cdn.tgdd.vn/Brand/2/Untitled-1-92x40-1.png",
+      },
+      {
+        id: 5,
+        name: "TCL",
+        img: "https://cdn.tgdd.vn/Brand/2/TCL1942-b_57.png",
+      },
+      {
+        id: 6,
+        name: "Sharp",
+        img: "https://cdn.tgdd.vn/Brand/2/Sharp1942-b_48.png",
+      },
+      {
+        id: 7,
+        name: "TOSHIBA",
+        img: "https://cdn.tgdd.vn/Brand/2/TOSHIBA-200x80-1.png",
+      },
+      {
+        id: 8,
+        name: "iFFALCON",
+        img: "https://cdn.tgdd.vn/Brand/2/iFFALCON-logo-200x80-1.png",
+      },
+    ],
+    //screen size
+    [
+      {
+        id: 1,
+        size: 32,
+      },
+      {
+        id: 2,
+        size: 40,
+      },
+      {
+        id: 3,
+        size: 42,
+      },
+      {
+        id: 4,
+        size: 43,
+      },
+      {
+        id: 5,
+        size: 48,
+      },
+      {
+        id: 6,
+        size: 49,
+      },
+      {
+        id: 7,
+        size: 50,
+      },
+      {
+        id: 8,
+        size: 55,
+      },
+      {
+        id: 9,
+        size: 58,
+      },
+      {
+        id: 10,
+        size: 60,
+      },
+      {
+        id: 11,
+        size: 65,
+      },
+      {
+        id: 12,
+        size: 70,
+      },
+    ],
+  ],
   testOpp: function () {
     const fillter = new this.categoryList([], ["40"]);
     console.log(fillter);
@@ -362,17 +458,29 @@ const App = {
   FilterHandleClick: function () {
     $(".maint-filter").addEventListener("click", (e) => {
       $(".fillterModal").classList.toggle("hidden");
-      document.body.classList.add("overflow-hidden");
+      document.body.classList.toggle("overflow-hidden");
       window.scrollTo({
         top: 870,
         behavior: "smooth",
       });
-      $(".maint-filter").classList.add("ftOverlay");
+      $(".maint-filter").classList.toggle("ftOverlay");
+      $(".filter-overlay").classList.toggle("hidden");
+    });
+    $(".filter-overlay").addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+    });
+    $(".closeBtn").addEventListener("click", (e) => {
+      $(".fillterModal").classList.toggle("hidden");
+      document.body.classList.remove("overflow-hidden");
+      $(".maint-filter").classList.remove("ftOverlay");
+      $(".filter-overlay").classList.toggle("hidden");
     });
     $(".fillterModal").addEventListener("click", (e) => {
       e.target.classList.toggle("hidden");
       document.body.classList.remove("overflow-hidden");
       $(".maint-filter").classList.remove("ftOverlay");
+      $(".filter-overlay").classList.toggle("hidden");
     });
   },
   SwiperMethod: function () {
