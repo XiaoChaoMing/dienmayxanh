@@ -168,9 +168,11 @@
         />
         <i class="fa-solid fa-magnifying-glass"></i>
       </div>
-      <div class="w-full flex justify-center items-center gap-4 sm:px-80 h-11">
+      <div
+        class="w-full flex justify-center items-center gap-4 sm:px-80 h-11 min-w-[375px] overflow-scroll"
+      >
         <div
-          class="flex justify-center items-center gap-4 min-w-[375px] text-[12px] sm:min-w-[1300px] sm:text-[15px]"
+          class="flex justify-center items-center gap-4 text-[12px] sm:min-w-[1300px] sm:text-[15px]"
         >
           <div class="hidden sm:block">
             <a href="" class="flex items-center gap-3 text-white">
@@ -208,7 +210,7 @@
               <p>Lọc nước</p>
             </a>
           </div>
-          <div>
+          <div class="hidden sm:block">
             <a href="" class="flex items-center gap-3 text-white">
               <p>Máy cũ</p>
             </a>
@@ -807,7 +809,11 @@
               </div>
             </div>
           </div>
-          <div class="test h-[1000px] w-full bg-blue-400 relative z-40"></div>
+          <div class="test h-fit w-full relative z-40">
+            <div
+              class="productList w-full h-full grid sm:grid-cols-5 grid-cols-2"
+            ></div>
+          </div>
         </div>
       </div>
     </div>
@@ -817,6 +823,140 @@
       <!-- <div
         class="overlay-filter h-96 w-[900px] bg-white absolute top-[9%]"
       ></div> -->
+    </div>
+    <div class="footer h-fit">
+      <div
+        class="top-footer h-fit sm:h-[200px] bg-white border-t-[1px] border-gray-300"
+      >
+        <div class="sm:px-80 h-full w-full flex justify-center">
+          <div
+            class="h-full w-full min-w-[375px] sm:min-w-[1200px] p-4 sm:block grid grid-flow-row"
+          >
+            <div
+              class="sm:flex flex-col gap-3 text-[14px] float-left w-[24%] hidden"
+            >
+              <a href=""><p>Tích điểm quà tặng VIP</p></a>
+              <a href=""><p>DV vệ sinh máy lạnh</p></a>
+              <a href=""><p>Lịch sử mua hàng</p></a>
+              <a href=""><p>Tìm hiểu về mua trả góp</p></a>
+              <a href=""><p>Tích điểm quà tặng VIP</p></a>
+            </div>
+            <div
+              class="sm:flex flex-col gap-3 text-[14px] float-left w-[19%] hidden"
+            >
+              <a href=""><p>Giới thiệu công ty (MWG.vn)</p></a>
+              <a href=""><p>Tuyển dụng</p></a>
+              <a href=""><p>Gửi góp ý, khiếu nại</p></a>
+              <a href=""><p>Tìm siêu thị (3371 shop)</p></a>
+              <a href=""><p>Xem bản mobile</p></a>
+            </div>
+            <div
+              class="flex flex-col gap-3 text-[14px] float-left w-full sm:w-[28%] mb-3"
+            >
+              <p>
+                <span class="font-bold">Tổng đài hỗ trợ </span>(Miễn phí gọi)
+              </p>
+              <p>
+                Gọi mua:
+                <span class="font-bold text-blue-500 cursor-pointer"
+                  >1800.1061</span
+                >
+                (7:30 - 22:00)
+              </p>
+              <p>
+                Gọi mua:
+                <span class="font-bold text-blue-500 cursor-pointer"
+                  >1800.1061</span
+                >
+                (7:30 - 22:00)
+              </p>
+              <p>
+                Gọi mua:
+                <span class="font-bold text-blue-500 cursor-pointer"
+                  >1800.1061</span
+                >
+                (7:30 - 22:00)
+              </p>
+            </div>
+            <div
+              class="flex flex-col gap-3 text-[14px] float-left w-full sm:w-[29%] mb-3"
+            >
+              <div class="w-full flex flex-col gap-3">
+                <div class="flex gap-3">
+                  <a class="flex gap-2 items-center text-blue-500" href="">
+                    <img
+                      class="h-[18px]"
+                      src="./image/Dự án mới (17).png"
+                      alt=""
+                    />
+                    <p>1975.1K fan</p>
+                  </a>
+                  <a class="flex gap-2 items-center text-blue-500" href="">
+                    <img
+                      class="h-[18px]"
+                      src="./image/Dự án mới (16).png"
+                      alt=""
+                    />
+                    <p>1975.1K fan</p>
+                  </a>
+                  <a class="flex gap-2 items-center text-blue-500" href="">
+                    <img
+                      class="h-[18px]"
+                      src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/mwgcart/mwg-site/ContentMwg/images/icon_zalo.png"
+                      alt=""
+                    />
+                    <p>1975.1K fan</p>
+                  </a>
+                </div>
+                <div class="flex">
+                  <a href="">
+                    <img src="./image/Dự án mới (12).png" alt="" />
+                  </a>
+                  <a href="">
+                    <img src="./image/Dự án mới (14).png" alt="" />
+                  </a>
+                  <a href="">
+                    <img src="./image/Dự án mới (13).png" alt="" />
+                  </a>
+                  <a href="">
+                    <img src="./image/Dự án mới (15).png" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="w-full">
+                <p>Website cùng tập đoàn</p>
+                <div class="grid grid-cols-4 grid-rows-2 gap-2 pt-3">
+                  <a href=""><img src="./image/Dự án mới (4).png" alt="" /></a>
+                  <a href=""><img src="./image/Dự án mới (5).png" alt="" /></a>
+                  <a href=""><img src="./image/Dự án mới (6).png" alt="" /></a>
+                  <a href=""><img src="./image/Dự án mới (7).png" alt="" /></a>
+                  <a href=""><img src="./image/Dự án mới (8).png" alt="" /></a>
+                  <a href=""><img src="./image/Dự án mới (9).png" alt="" /></a>
+                  <a href=""><img src="./image/Dự án mới (10).png" alt="" /></a>
+                  <a href=""><img src="./image/Dự án mới (11).png" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyRight w-full my-2">
+        <div class="sm:px-80 flex justify-center">
+          <div class="w-full min-w-[375px] sm:min-w-[1200px]">
+            <p class="text-[13px]">
+              © 2018. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở
+              KH & ĐT TP.HCM cấp ngày 02/01/2007. GPMXH: 21/GP-BTTTT do Bộ Thông
+              Tin và Truyền Thông cấp ngày 11/01/2021. <br />
+              Địa chỉ: 128 Trần Quang Khải, P.Tân Định, Q.1, TP.Hồ Chí Minh. Địa
+              chỉ liên hệ và gửi chứng từ: Lô T2-1.2, Đường D1, Đ. D1, P.Tân
+              Phú, TP.Thủ Đức, TP.Hồ Chí Minh. Điện thoại: 028 38125960. Email:
+              cskh@thegioididong.com. Chịu trách nhiệm nội dung: Huỳnh Văn Tốt.
+              Email: Tot.huynhvan@thegioididong.com.
+              <a class="text-blue-500" href="">Xem chính sách sử dụng</a>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script type="module" src="tivi.js"></script>

@@ -334,6 +334,7 @@ const App = {
             return true;
         }
       });
+      this.RenderProduct(newProduct);
       console.log(newProduct);
     });
   },
@@ -387,6 +388,74 @@ const App = {
       "afterbegin",
       swiperList.join("")
     );
+  },
+  RenderProduct: function (Lists) {
+    const ProductList = Lists.map((item) => {
+      return `
+      <div class="h-fit w-full">
+      <div
+        class="product bg-white min-h-[420px] h-[420px] w-full cursor-pointer group hover:shadow-2xl"
+      >
+        <a href="" class="flex flex-col py-3 h-full">
+          <div class="w-fit bg-gray-100 p-1 ml-3">
+            <p class="text-[11px]">Trả góp 0%</p>
+          </div>
+          <div
+            class="basis-3/5 px-3 flex items-center overflow-hidden relative"
+          >
+            <img
+              class="h-auto group-hover:translate-y-[-10px] transition duration-500 ease-in-out"
+              src="https://cdn.tgdd.vn/Products/Images/1942/235794/led-4k-samsung-ua65au8100-221122-040829-550x340.jpg"
+              alt=""
+            />
+            <img
+              class="absolute h-10 bottom-2 left-3 group-hover:translate-y-[-16px] transition duration-500 ease-in-out"
+              src="${item.sticker}"
+              alt=""
+            />
+          </div>
+
+          <div class="flex flex-col w-full justify-start px-3">
+            <div
+              class="flex items-center bg-gradient-to-r from-[#faab08] to-[#d42611] w-fit pr-3 rounded-full"
+            >
+              <img
+                class="h-5"
+                src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2020/10/content/icon5-50x50.png"
+                alt=""
+              />
+              <p class="text-[11px] text-white leading-[19px] pl-1">
+                GIÁ RẺ QUÁ
+              </p>
+            </div>
+            <p class="text-[15px] py-1 group-hover:text-blue-500">
+              ${item.name}
+            </p>
+            <p class="py-1 text-red-700 font-semibold text-[20px]">
+              ${item.price.toLocaleString("en-US")} đ
+            </p>
+            
+            <div class="flex gap-3 text-[14px] py-1">
+                <p class="bg-gary-300 border-[1px] border-black p-1 rounded-md ">${
+                  item.screenSize
+                } inch</p>
+                <p class="bg-gary-300 border-[1px] border-black p-1 rounded-md ">${
+                  item.resolution
+                }</p>
+              </div>
+            <p class="">${item.utilities}</p>
+            <div class="w-full h-full flex items-center gap-x-1">
+              <p class="font-medium text-orange-500">4.3</p>
+              <img class="w-4 h-4" src="./image/star.png" alt="" />
+              <p class="text-gray-400">(510)</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+      `;
+    });
+    $(".productList").innerHTML = ProductList.join("");
   },
   FilterHandleClick: function () {
     $(".maint-filter").addEventListener("click", (e) => {
@@ -459,6 +528,7 @@ const App = {
     this.fillterProduct();
     this.FilterHandleClick();
     this.inputRange();
+    this.RenderProduct(this.productList);
     this.handleOptionClick();
   },
 };
