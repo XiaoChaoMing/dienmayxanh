@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="tivi.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
@@ -344,10 +344,10 @@
                   <i class="fa-solid fa-filter"></i>
                   <p>Bộ lọc</p>
                   <div
-                    class="filter-overlay sm:h-[800px] h-[900px] sm:w-[1000px] w-full bg-white fixed sm:absolute z-[999] left-0 top-0 sm:top-[calc(50%+39px)] hidden overflow-scroll sm:overflow-hidden"
+                    class="filter-overlay sm:h-fit h-full sm:w-[1000px] w-full bg-white fixed sm:absolute z-[999] left-0 top-0 sm:top-[calc(50%+39px)] hidden overflow-scroll sm:overflow-hidden"
                   >
                     <div
-                      class="w-full bg-white closeBtn sm:absolute fixed right-0 flex justify-end"
+                      class="w-full bg-white closeBtn sm:absolute fixed right-0 flex justify-end z-[999]"
                     >
                       <p
                         class="w-fit px-4 py-2 border-[1px] border-gray-800/25 rounded-lg cursor-pointer"
@@ -357,15 +357,16 @@
                       </p>
                     </div>
 
-                    <div class="h-[1500px] mt-7">
-                      <!-- brank filter -->
+                    <div class="h-fit mt-7 pb-3">
+                      <!-- brand filter -->
                       <div class="brand pt-6 px-4">
                         <p class="sm:text-[20px] text-[15px] font-semibold">
                           Hãng
                         </p>
                         <div class="flex gap-3 pt-3 flex-wrap">
                           <div
-                            class="p-2 w-20 flex justify-center border-[1px] border-gray-800/25 rounded-lg cursor-pointer"
+                            class="p-2 w-20 flex justify-center border-[1px] border-gray-800/25 rounded-lg cursor-pointer selected-option hover:border-blue-400 hover:text-blue-400"
+                            values="Samsung"
                           >
                             <img
                               class="h-6"
@@ -374,7 +375,8 @@
                             />
                           </div>
                           <div
-                            class="p-2 w-20 flex justify-center border-[1px] border-gray-800/25 rounded-lg cursor-pointer"
+                            class="p-2 w-20 flex justify-center border-[1px] border-gray-800/25 rounded-lg cursor-pointer selected-option hover:border-blue-400 hover:text-blue-400"
+                            values="Sony"
                           >
                             <img
                               class="h-6"
@@ -383,7 +385,8 @@
                             />
                           </div>
                           <div
-                            class="p-2 w-20 flex justify-center border-[1px] border-gray-800/25 rounded-lg cursor-pointer"
+                            class="p-2 w-20 flex justify-center border-[1px] border-gray-800/25 rounded-lg cursor-pointer selected-option hover:border-blue-400 hover:text-blue-400"
+                            values="LG"
                           >
                             <img
                               class="h-6"
@@ -392,7 +395,8 @@
                             />
                           </div>
                           <div
-                            class="p-2 w-20 flex justify-center border-[1px] border-gray-800/25 rounded-lg cursor-pointer"
+                            class="p-2 w-20 flex justify-center border-[1px] border-gray-800/25 rounded-lg cursor-pointer selected-option hover:border-blue-400 hover:text-blue-400"
+                            values="Casper"
                           >
                             <img
                               class="h-6"
@@ -401,7 +405,8 @@
                             />
                           </div>
                           <div
-                            class="p-2 w-20 flex justify-center border-[1px] border-gray-800/25 rounded-lg cursor-pointer"
+                            class="p-2 w-20 flex justify-center border-[1px] border-gray-800/25 rounded-lg cursor-pointer selected-option hover:border-blue-400 hover:text-blue-400"
+                            values="TCL"
                           >
                             <img
                               class="h-6"
@@ -410,7 +415,8 @@
                             />
                           </div>
                           <div
-                            class="p-2 w-20 flex justify-center border-[1px] border-gray-800/25 rounded-lg cursor-pointer"
+                            class="p-2 w-20 flex justify-center border-[1px] border-gray-800/25 rounded-lg cursor-pointer selected-option hover:border-blue-400 hover:text-blue-400"
+                            values="Sharp"
                           >
                             <img
                               class="h-6"
@@ -419,7 +425,8 @@
                             />
                           </div>
                           <div
-                            class="p-2 w-20 flex justify-center border-[1px] border-gray-800/25 rounded-lg cursor-pointer"
+                            class="p-2 w-20 flex justify-center border-[1px] border-gray-800/25 rounded-lg cursor-pointer selected-option hover:border-blue-400 hover:text-blue-400"
+                            values="TOSHIBA"
                           >
                             <img
                               class="h-6"
@@ -428,7 +435,8 @@
                             />
                           </div>
                           <div
-                            class="p-2 w-20 flex justify-center border-[1px] border-gray-800/25 rounded-lg cursor-pointer"
+                            class="p-2 w-20 flex justify-center border-[1px] border-gray-800/25 rounded-lg cursor-pointer selected-option hover:border-blue-400 hover:text-blue-400"
+                            values="iFFALCON"
                           >
                             <img
                               class="h-6"
@@ -437,6 +445,319 @@
                             />
                           </div>
                         </div>
+                      </div>
+                      <!-- screen , price, DPG -->
+                      <div
+                        class="h-fit w-full grid grid-rows-3 sm:grid-rows-1 sm:grid-cols-3 p-4 gap-3"
+                      >
+                        <!-- screen -->
+                        <div class="screenSize">
+                          <p class="text-[19px] font-semibold mb-4">
+                            Kích cỡ màn hình
+                          </p>
+                          <div class="grid grid-cols-3 gap-2">
+                            <p
+                              class="p-2 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="32"
+                            >
+                              32 inch
+                            </p>
+                            <p
+                              class="p-2 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="40"
+                            >
+                              40 inch
+                            </p>
+                            <p
+                              class="p-2 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="42"
+                            >
+                              42 inch
+                            </p>
+                            <p
+                              class="p-2 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="43"
+                            >
+                              43 inch
+                            </p>
+                            <p
+                              class="p-2 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="48"
+                            >
+                              48 inch
+                            </p>
+                            <p
+                              class="p-2 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="49"
+                            >
+                              49 inch
+                            </p>
+                            <p
+                              class="p-2 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="50"
+                            >
+                              50 inch
+                            </p>
+                            <p
+                              class="p-2 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="55"
+                            >
+                              55 inch
+                            </p>
+                            <p
+                              class="p-2 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="58"
+                            >
+                              58 inch
+                            </p>
+                          </div>
+                        </div>
+                        <!-- price -->
+                        <div class="priceProgress relative">
+                          <p
+                            class="sm:text-[20px] text-[15px] font-semibold mb-4"
+                          >
+                            Giá thành
+                          </p>
+                          <div
+                            class="inputprice h-9 flex justify-between items-center px-5"
+                          >
+                            <div
+                              class="border-[1px] border-gray-800/25 cursor-pointer text-center h-full bg-white flex items-center rounded-md"
+                            >
+                              <input
+                                type="tel"
+                                inputmode="numeric"
+                                maxlength="8"
+                                class="outline-none text-right min-value max-w-[64px]"
+                                value="3300"
+                              />
+                              <label class="placehoder pr-2">.000đ</label>
+                            </div>
+                            <div class="h-[1px] w-[50%] bg-black"></div>
+                            <div
+                              class="border-[1px] border-gray-800/25 cursor-pointer text-center h-full bg-white flex items-center rounded-md"
+                            >
+                              <input
+                                type="tel"
+                                inputmode="numeric"
+                                maxlength="8"
+                                class="outline-none text-right max-value max-w-[64px]"
+                                value="3500000"
+                              />
+                              <label class="placehoder pr-2">.000đ</label>
+                            </div>
+                          </div>
+                          <div class="slideRange mt-8 px-3">
+                            <div
+                              class="h-1 w-full bg-gray-500 relative rounded-full"
+                            >
+                              <div
+                                class="range h-full absolute bg-blue-400 left-0 right-0"
+                              ></div>
+                              <div class="rangeInput relative">
+                                <input
+                                  type="range"
+                                  name=""
+                                  class="range-min"
+                                  min="3000"
+                                  max="3500000"
+                                  step="1000"
+                                  value="3000"
+                                />
+                                <input
+                                  type="range"
+                                  name=""
+                                  class="range-max"
+                                  min="3000"
+                                  max="3500000"
+                                  step="1000"
+                                  value="3500000"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- DPG -->
+                        <div class="resolution">
+                          <p class="text-[19px] font-semibold mb-4">
+                            Độ phân giải
+                          </p>
+                          <div class="flex flex-wrap gap-3">
+                            <p
+                              class="p-3 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="HD"
+                            >
+                              HD
+                            </p>
+                            <p
+                              class="p-3 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="Full HD"
+                            >
+                              Full HD
+                            </p>
+                            <p
+                              class="p-3 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="4K"
+                            >
+                              4K
+                            </p>
+                            <p
+                              class="p-3 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="8K"
+                            >
+                              8K
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- type ,utilities, OS -->
+                      <div
+                        class="h-fit w-full grid grid-rows-3 sm:grid-rows-1 sm:grid-cols-3 p-4 gap-3"
+                      >
+                        <div class="tiviType">
+                          <p class="text-[19px] font-semibold mb-4">
+                            Loại Tivi
+                          </p>
+                          <div class="flex flex-wrap gap-2">
+                            <p
+                              class="p-2 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="Smart TV"
+                            >
+                              Smart TV
+                            </p>
+                            <p
+                              class="p-2 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="Tivi OLED"
+                            >
+                              Tivi OLED
+                            </p>
+                            <p
+                              class="p-2 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="Tivi Android"
+                            >
+                              Tivi Android
+                            </p>
+                            <p
+                              class="p-2 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="Google TV"
+                            >
+                              Google TV
+                            </p>
+                            <p
+                              class="p-2 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="Tivi QLED"
+                            >
+                              Tivi QLED
+                            </p>
+                            <p
+                              class="p-2 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="Tivi Nanocell"
+                            >
+                              Tivi Nanocell
+                            </p>
+                            <p
+                              class="p-2 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="Tivi Mini LED"
+                            >
+                              Tivi Mini LED
+                            </p>
+                            <p
+                              class="p-2 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="Tivi thiết kế đặc biệt"
+                            >
+                              Tivi thiết kế đặc biệt
+                            </p>
+                          </div>
+                        </div>
+                        <div class="utilities">
+                          <p class="text-[19px] font-semibold mb-4">
+                            Tính Năng
+                          </p>
+                          <div class="flex flex-wrap gap-2">
+                            <p
+                              class="p-2 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="Chơi game trên tivi"
+                            >
+                              Chơi game trên tivi
+                            </p>
+                            <p
+                              class="p-2 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="Điều khiển bằng giọng nói"
+                            >
+                              Điều khiển bằng giọng nói
+                            </p>
+                            <p
+                              class="p-2 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="Chia sẻ màn hình điện thoại lên tivi"
+                            >
+                              Chia sẻ màn hình điện thoại lên tivi
+                            </p>
+                            <p
+                              class="p-2 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="Trợ lý ảo Google Assistant"
+                            >
+                              Trợ lý ảo Google Assistant
+                            </p>
+                            <p
+                              class="p-2 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="Điều khiển bằng điện thoại"
+                            >
+                              Điều khiển bằng điện thoại
+                            </p>
+                          </div>
+                        </div>
+                        <div class="OS">
+                          <p class="text-[19px] font-semibold mb-4">
+                            Hệ điều hành
+                          </p>
+                          <div class="flex flex-wrap gap-2">
+                            <p
+                              class="p-2 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="Android"
+                            >
+                              Android
+                            </p>
+                            <p
+                              class="p-2 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="WebOS"
+                            >
+                              WebOS
+                            </p>
+                            <p
+                              class="p-2 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="TizenOS"
+                            >
+                              TizenOS
+                            </p>
+                            <p
+                              class="p-2 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="Google TV"
+                            >
+                              Google TV
+                            </p>
+                            <p
+                              class="p-2 border-[1px] border-gray-800/25 rounded-lg cursor-pointer text-center selected-option hover:border-blue-400 hover:text-blue-400"
+                              values="Linux"
+                            >
+                              Linux
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="h-9 w-full bg-white flex justify-center gap-5 fixed bottom-0 sm:relative"
+                      >
+                        <p
+                          class="text-red-500 p-2 bg-white border-[1px] text-center font-normal border-red-500 rounded-md"
+                        >
+                          Bỏ chọn
+                        </p>
+                        <p
+                          class="p-2 text-white font-medium text-center bg-blue-500 rounded-md showProducts"
+                        >
+                          Xem kết quả
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -486,7 +807,7 @@
               </div>
             </div>
           </div>
-          <div class="test h-[1000px] w-full bg-blue-400"></div>
+          <div class="test h-[1000px] w-full bg-blue-400 relative z-40"></div>
         </div>
       </div>
     </div>

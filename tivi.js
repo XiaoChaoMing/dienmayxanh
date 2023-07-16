@@ -233,7 +233,7 @@ const App = {
   ],
   productList: [
     {
-      company: "sam sung",
+      company: "Samsung",
       screenSize: "32",
       price: "10.000.000",
       resolution: "HD",
@@ -243,7 +243,7 @@ const App = {
       name: "Sony Google TV KD-43X75K",
     },
     {
-      company: "sony",
+      company: "Sony",
       screenSize: "40",
       price: "10.000.000",
       resolution: "Full HD",
@@ -272,13 +272,13 @@ const App = {
     utilities,
     OS
   ) {
-    this.company = company;
-    this.screenSize = screenSize;
-    this.price = price;
-    this.resolution = resolution;
-    this.type = type;
-    this.utilities = utilities;
-    this.OS = OS;
+    this.company = [];
+    this.screenSize = [];
+    this.price = [];
+    this.resolution = [];
+    this.type = [];
+    this.utilities = [];
+    this.OS = [];
   },
   FilterOption: [
     // brand
@@ -375,34 +375,99 @@ const App = {
         size: 70,
       },
     ],
+    //
   ],
-  testOpp: function () {
-    const fillter = new this.categoryList([], ["40"]);
-    console.log(fillter);
-    return fillter;
-  },
-  fillterProduct: function () {
-    const products = [
-      ...new Set(
-        this.productList.map((product) => {
-          return product;
-        })
-      ),
-    ];
-    console.log(products);
-    const fillterList = this.testOpp();
-    console.log(fillterList);
-
-    const newProduct = products.filter((item) => {
-      for (var key in fillterList) {
-        if (
-          Array.isArray(fillterList[key]) &&
-          fillterList[key].includes(item[key])
-        )
-          return true;
-      }
+  showProducts: function () {
+    const fillterList = new this.categoryList();
+    $(".showProducts").addEventListener("click", () => {
+      $$(".activeBtn").forEach((item) => {
+        console.log(item.getAttribute("values"));
+        console.log(item.parentNode.parentNode);
+        if (item.parentNode.parentNode.classList.contains("brand")) {
+          fillterList.company.push(item.getAttribute("values"));
+        }
+        if (item.parentNode.parentNode.classList.contains("screenSize")) {
+          fillterList.screenSize.push(item.getAttribute("values"));
+        }
+      });
+      return fillterList;
     });
-    console.log(newProduct);
+  },
+  inputRange: function () {
+    let pricegap = 1000;
+    $(".min-value").addEventListener("input", () => {
+      // let text = /^[a-zA-Z]+$/;
+      if ($(".min-value").value.match(text)) {
+        $(".min-value").value = "";
+      }
+      const num = $(".min-value").value;
+      // $(".min-value").value = new Intl.NumberFormat().format(num);
+      $$(".rangeInput input")[0].value = $(".min-value").value;
+      $$(".rangeInput input")[1].value = $(".max-value").value;
+    });
+    $$(".rangeInput input").forEach((input) => {
+      input.addEventListener("input", (e) => {
+        let minValue = parseInt($$(".rangeInput input")[0].value);
+        let maxValue = parseInt($$(".rangeInput input")[1].value);
+        if (maxValue - minValue < pricegap) {
+          if (e.target.className.match("range-min")) {
+            $$(".rangeInput input")[0].value = maxValue - pricegap;
+          } else {
+            $$(".rangeInput input")[1].value = minValue + pricegap;
+          }
+        } else {
+          $(".range").style.left =
+            (minValue / $$(".rangeInput input")[0].max) * 100 + "%";
+          $(".range").style.right =
+            100 - (maxValue / $$(".rangeInput input")[1].max) * 100 + "%";
+        }
+        $(".min-value").value = minValue;
+        $(".max-value").value = maxValue;
+      });
+    });
+  },
+  testOption: function () {
+    $$(".selected-option").forEach((item) => {
+      item.addEventListener("click", (e) => {
+        e.preventDefault();
+        item.classList.toggle("activeBtn");
+        // console.log(item.getAttribute("values"));
+      });
+    });
+  },
+
+  fillterProduct: function () {
+    // show the product
+    $(".showProducts").addEventListener("click", () => {
+      const fillterList = new this.categoryList();
+      $$(".activeBtn").forEach((item) => {
+        if (item.parentNode.parentNode.classList.contains("brand")) {
+          fillterList.company.push(item.getAttribute("values"));
+        }
+        if (item.parentNode.parentNode.classList.contains("screenSize")) {
+          fillterList.screenSize.push(item.getAttribute("values"));
+        }
+      });
+      // filter product
+      const products = [
+        ...new Set(
+          this.productList.map((product) => {
+            return product;
+          })
+        ),
+      ];
+      console.log(products);
+      const newProduct = products.filter((item) => {
+        for (var key in fillterList) {
+          if (
+            Array.isArray(fillterList[key]) &&
+            fillterList[key].includes(item[key])
+          )
+            return true;
+        }
+      });
+      console.log(newProduct);
+    });
   },
   RenderTopcarosel: function () {
     const slider = this.vouncherList.map((item) => {
@@ -525,7 +590,10 @@ const App = {
     this.SwiperMethod();
     this.fillterProduct();
     this.FilterHandleClick();
-    this.testOpp();
+    // this.showProducts();
+    this.inputRange();
+
+    this.testOption();
   },
 };
 App.Start();

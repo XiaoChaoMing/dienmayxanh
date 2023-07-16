@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.centerContent {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: calc((100% - 30px) / 2) !important;
+}
+
+.btnR_shadow {
+  box-shadow: 6px 0 4px rgba(0, 0, 0, 0.05), 4px 0 4px rgba(0, 0, 0, 0.09);
+}
+.btnL_shadow {
+  box-shadow: -6px 0 4px rgba(0, 0, 0, 0.05), -4px 0 4px rgba(0, 0, 0, 0.09);
+}
+.active_cateBtn {
+  background-color: #feb70b !important;
+}
+.bannerRight {
+  right: calc(((100% - 1200px) / 2) - 105px);
+}
+.bannerLeft {
+  left: calc(((100% - 1200px) / 2) - 105px);
+}
+.showBoxchat {
+  display: block;
+}
+.dot-ol {
+  height: 12px;
+  width: 12px;
+  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
+  border: 2px solid white;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 1%;
+  right: calc((100% - 50px) / 2);
+}
+::-webkit-scrollbar {
+  display: none;
+}
+/* .filter-overlay:after {
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+  position: absolute;
+  transform: translate(100%, -100%);
+} */
+.ftOverlay {
+  z-index: 9999;
+  border-color: blue !important;
+  background-color: white;
+}
+.rangeInput input {
+  position: absolute;
+  top: -1px;
+  height: 5px;
+  width: 100%;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none !important;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  -webkit-appearance: none;
+  pointer-events: auto;
+  border: 1px solid rgb(0, 149, 255);
+  background-color: white;
+}
+input[type="range"]::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  -moz-appearance: none;
+  pointer-events: auto;
+  border: 1px solid rgb(0, 149, 255);
+  background-color: white;
+}
+.activeBtn {
+  border-color: rgb(0, 149, 255) !important;
+  color: rgb(0, 149, 255);
+}
