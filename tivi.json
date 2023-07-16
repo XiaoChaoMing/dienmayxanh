@@ -1,0 +1,802 @@
+[
+  {
+    "company": "iFFALCON",
+    "screenSize": "42",
+    "resolution": "Full HD",
+    "type": "Smart TV",
+    "utilities": "Chơi game trên tivi",
+    "OS": "Linux",
+    "price": 2290810,
+    "name": "iFFALCON 42 Full HD Smart TV"
+  },
+  {
+    "company": "Sharp",
+    "screenSize": "58",
+    "resolution": "HD",
+    "type": "Tivi Android",
+    "utilities": "Trợ lý ảo Google Assistant",
+    "OS": "Android",
+    "price": 8106353,
+    "name": "Sharp 58 HD Tivi Android"
+  },
+  {
+    "company": "LG",
+    "screenSize": "50",
+    "resolution": "8K",
+    "type": "Smart TV",
+    "utilities": "Điều khiển bằng điện thoại",
+    "OS": "Linux",
+    "price": 970297,
+    "name": "LG 50 8K Smart TV"
+  },
+  {
+    "company": "iFFALCON",
+    "screenSize": "32",
+    "resolution": "Full HD",
+    "type": "Tivi Android",
+    "utilities": "Chơi game trên tivi",
+    "OS": "Linux",
+    "price": 37918315,
+    "name": "iFFALCON 32 Full HD Tivi Android"
+  },
+  {
+    "company": "iFFALCON",
+    "screenSize": "40",
+    "resolution": "8K",
+    "type": "Google TV",
+    "utilities": "Chơi game trên tivi",
+    "OS": "Linux",
+    "price": 1214064,
+    "name": "iFFALCON 40 8K Google TV"
+  },
+  {
+    "company": "TCL",
+    "screenSize": "50",
+    "resolution": "Full HD",
+    "type": "Tivi thiết kế đặc biệt",
+    "utilities": "Chia sẻ màn hình điện thoại lên tivi",
+    "OS": "Android",
+    "price": 17287817,
+    "name": "TCL 50 Full HD Tivi thiết kế đặc biệt"
+  },
+  {
+    "company": "Samsung",
+    "screenSize": "48",
+    "resolution": "Full HD",
+    "type": "Tivi OLED",
+    "utilities": "Chia sẻ màn hình điện thoại lên tivi",
+    "OS": "Linux",
+    "price": 35549051,
+    "name": "Samsung 48 Full HD Tivi OLED"
+  },
+  {
+    "company": "LG",
+    "screenSize": "42",
+    "resolution": "Full HD",
+    "type": "Tivi thiết kế đặc biệt",
+    "utilities": "Trợ lý ảo Google Assistant",
+    "OS": "WebOS",
+    "price": 34892503,
+    "name": "LG 42 Full HD Tivi thiết kế đặc biệt"
+  },
+  {
+    "company": "Sharp",
+    "screenSize": "48",
+    "resolution": "Full HD",
+    "type": "Tivi OLED",
+    "utilities": "Chia sẻ màn hình điện thoại lên tivi",
+    "OS": "Linux",
+    "price": 18637786,
+    "name": "Sharp 48 Full HD Tivi OLED"
+  },
+  {
+    "company": "TOSHIBA",
+    "screenSize": "49",
+    "resolution": "4K",
+    "type": "Tivi Nanocell",
+    "utilities": "Chơi game trên tivi",
+    "OS": "Google TV",
+    "price": 11572658,
+    "name": "TOSHIBA 49 4K Tivi Nanocell"
+  },
+  {
+    "company": "TCL",
+    "screenSize": "40",
+    "resolution": "Full HD",
+    "type": "Smart TV",
+    "utilities": "Chia sẻ màn hình điện thoại lên tivi",
+    "OS": "Google TV",
+    "price": 9596476,
+    "name": "TCL 40 Full HD Smart TV"
+  },
+  {
+    "company": "Casper",
+    "screenSize": "58",
+    "resolution": "Full HD",
+    "type": "Tivi thiết kế đặc biệt",
+    "utilities": "Điều khiển bằng giọng nói",
+    "OS": "Android",
+    "price": 11643347,
+    "name": "Casper 58 Full HD Tivi thiết kế đặc biệt"
+  },
+  {
+    "company": "Sony",
+    "screenSize": "40",
+    "resolution": "8K",
+    "type": "Tivi OLED",
+    "utilities": "Chơi game trên tivi",
+    "OS": "TizenOS",
+    "price": 11747404,
+    "name": "Sony 40 8K Tivi OLED"
+  },
+  {
+    "company": "Sharp",
+    "screenSize": "42",
+    "resolution": "4K",
+    "type": "Tivi QLED",
+    "utilities": "Điều khiển bằng giọng nói",
+    "OS": "Linux",
+    "price": 16254123,
+    "name": "Sharp 42 4K Tivi QLED"
+  },
+  {
+    "company": "TCL",
+    "screenSize": "49",
+    "resolution": "Full HD",
+    "type": "Tivi Mini LED",
+    "utilities": "Chơi game trên tivi",
+    "OS": "Linux",
+    "price": 9551028,
+    "name": "TCL 49 Full HD Tivi Mini LED"
+  },
+  {
+    "company": "TOSHIBA",
+    "screenSize": "48",
+    "resolution": "4K",
+    "type": "Tivi OLED",
+    "utilities": "Điều khiển bằng giọng nói",
+    "OS": "Linux",
+    "price": 38693592,
+    "name": "TOSHIBA 48 4K Tivi OLED"
+  },
+  {
+    "company": "iFFALCON",
+    "screenSize": "42",
+    "resolution": "HD",
+    "type": "Google TV",
+    "utilities": "Điều khiển bằng điện thoại",
+    "OS": "Linux",
+    "price": 19660979,
+    "name": "iFFALCON 42 HD Google TV"
+  },
+  {
+    "company": "Casper",
+    "screenSize": "48",
+    "resolution": "4K",
+    "type": "Tivi thiết kế đặc biệt",
+    "utilities": "Chơi game trên tivi",
+    "OS": "TizenOS",
+    "price": 22000108,
+    "name": "Casper 48 4K Tivi thiết kế đặc biệt"
+  },
+  {
+    "company": "Sony",
+    "screenSize": "50",
+    "resolution": "HD",
+    "type": "Tivi thiết kế đặc biệt",
+    "utilities": "Chia sẻ màn hình điện thoại lên tivi",
+    "OS": "Android",
+    "price": 28065656,
+    "name": "Sony 50 HD Tivi thiết kế đặc biệt"
+  },
+  {
+    "company": "Sharp",
+    "screenSize": "42",
+    "resolution": "HD",
+    "type": "Tivi thiết kế đặc biệt",
+    "utilities": "Chơi game trên tivi",
+    "OS": "Android",
+    "price": 25308669,
+    "name": "Sharp 42 HD Tivi thiết kế đặc biệt"
+  },
+  {
+    "company": "Casper",
+    "screenSize": "43",
+    "resolution": "8K",
+    "type": "Smart TV",
+    "utilities": "Điều khiển bằng điện thoại",
+    "OS": "TizenOS",
+    "price": 36547082,
+    "name": "Casper 43 8K Smart TV"
+  },
+  {
+    "company": "TCL",
+    "screenSize": "50",
+    "resolution": "4K",
+    "type": "Tivi Mini LED",
+    "utilities": "Trợ lý ảo Google Assistant",
+    "OS": "Google TV",
+    "price": 14402825,
+    "name": "TCL 50 4K Tivi Mini LED"
+  },
+  {
+    "company": "TOSHIBA",
+    "screenSize": "49",
+    "resolution": "Full HD",
+    "type": "Google TV",
+    "utilities": "Chia sẻ màn hình điện thoại lên tivi",
+    "OS": "TizenOS",
+    "price": 15993245,
+    "name": "TOSHIBA 49 Full HD Google TV"
+  },
+  {
+    "company": "TOSHIBA",
+    "screenSize": "58",
+    "resolution": "4K",
+    "type": "Tivi Nanocell",
+    "utilities": "Trợ lý ảo Google Assistant",
+    "OS": "TizenOS",
+    "price": 19011491,
+    "name": "TOSHIBA 58 4K Tivi Nanocell"
+  },
+  {
+    "company": "TCL",
+    "screenSize": "32",
+    "resolution": "HD",
+    "type": "Tivi Android",
+    "utilities": "Điều khiển bằng điện thoại",
+    "OS": "Linux",
+    "price": 3020354,
+    "name": "TCL 32 HD Tivi Android"
+  },
+  {
+    "company": "Samsung",
+    "screenSize": "43",
+    "resolution": "8K",
+    "type": "Tivi Android",
+    "utilities": "Trợ lý ảo Google Assistant",
+    "OS": "Android",
+    "price": 26144867,
+    "name": "Samsung 43 8K Tivi Android"
+  },
+  {
+    "company": "TOSHIBA",
+    "screenSize": "42",
+    "resolution": "Full HD",
+    "type": "Google TV",
+    "utilities": "Điều khiển bằng điện thoại",
+    "OS": "Android",
+    "price": 3944448,
+    "name": "TOSHIBA 42 Full HD Google TV"
+  },
+  {
+    "company": "TCL",
+    "screenSize": "58",
+    "resolution": "8K",
+    "type": "Tivi Mini LED",
+    "utilities": "Chơi game trên tivi",
+    "OS": "Linux",
+    "price": 27255798,
+    "name": "TCL 58 8K Tivi Mini LED"
+  },
+  {
+    "company": "TOSHIBA",
+    "screenSize": "42",
+    "resolution": "HD",
+    "type": "Tivi thiết kế đặc biệt",
+    "utilities": "Chia sẻ màn hình điện thoại lên tivi",
+    "OS": "Linux",
+    "price": 2087099,
+    "name": "TOSHIBA 42 HD Tivi thiết kế đặc biệt"
+  },
+  {
+    "company": "TCL",
+    "screenSize": "49",
+    "resolution": "4K",
+    "type": "Tivi QLED",
+    "utilities": "Chơi game trên tivi",
+    "OS": "Google TV",
+    "price": 5332234,
+    "name": "TCL 49 4K Tivi QLED"
+  },
+  {
+    "company": "Casper",
+    "screenSize": "42",
+    "resolution": "8K",
+    "type": "Tivi Android",
+    "utilities": "Điều khiển bằng giọng nói",
+    "OS": "Android",
+    "price": 3824827,
+    "name": "Casper 42 8K Tivi Android"
+  },
+  {
+    "company": "Samsung",
+    "screenSize": "42",
+    "resolution": "4K",
+    "type": "Tivi Android",
+    "utilities": "Trợ lý ảo Google Assistant",
+    "OS": "TizenOS",
+    "price": 31922035,
+    "name": "Samsung 42 4K Tivi Android"
+  },
+  {
+    "company": "LG",
+    "screenSize": "49",
+    "resolution": "HD",
+    "type": "Tivi Android",
+    "utilities": "Điều khiển bằng điện thoại",
+    "OS": "Linux",
+    "price": 14650022,
+    "name": "LG 49 HD Tivi Android"
+  },
+  {
+    "company": "Casper",
+    "screenSize": "48",
+    "resolution": "HD",
+    "type": "Tivi OLED",
+    "utilities": "Chơi game trên tivi",
+    "OS": "TizenOS",
+    "price": 22759141,
+    "name": "Casper 48 HD Tivi OLED"
+  },
+  {
+    "company": "TOSHIBA",
+    "screenSize": "49",
+    "resolution": "4K",
+    "type": "Tivi QLED",
+    "utilities": "Điều khiển bằng giọng nói",
+    "OS": "WebOS",
+    "price": 23799152,
+    "name": "TOSHIBA 49 4K Tivi QLED"
+  },
+  {
+    "company": "Sharp",
+    "screenSize": "49",
+    "resolution": "8K",
+    "type": "Tivi thiết kế đặc biệt",
+    "utilities": "Trợ lý ảo Google Assistant",
+    "OS": "Android",
+    "price": 29536619,
+    "name": "Sharp 49 8K Tivi thiết kế đặc biệt"
+  },
+  {
+    "company": "TCL",
+    "screenSize": "40",
+    "resolution": "Full HD",
+    "type": "Tivi QLED",
+    "utilities": "Chia sẻ màn hình điện thoại lên tivi",
+    "OS": "WebOS",
+    "price": 33448928,
+    "name": "TCL 40 Full HD Tivi QLED"
+  },
+  {
+    "company": "Sharp",
+    "screenSize": "40",
+    "resolution": "8K",
+    "type": "Tivi QLED",
+    "utilities": "Điều khiển bằng giọng nói",
+    "OS": "Android",
+    "price": 37303775,
+    "name": "Sharp 40 8K Tivi QLED"
+  },
+  {
+    "company": "Samsung",
+    "screenSize": "48",
+    "resolution": "HD",
+    "type": "Google TV",
+    "utilities": "Điều khiển bằng điện thoại",
+    "OS": "TizenOS",
+    "price": 5868522,
+    "name": "Samsung 48 HD Google TV"
+  },
+  {
+    "company": "Casper",
+    "screenSize": "50",
+    "resolution": "8K",
+    "type": "Smart TV",
+    "utilities": "Trợ lý ảo Google Assistant",
+    "OS": "Android",
+    "price": 10495786,
+    "name": "Casper 50 8K Smart TV"
+  },
+  {
+    "company": "Sharp",
+    "screenSize": "42",
+    "resolution": "4K",
+    "type": "Tivi thiết kế đặc biệt",
+    "utilities": "Điều khiển bằng giọng nói",
+    "OS": "WebOS",
+    "price": 12814165,
+    "name": "Sharp 42 4K Tivi thiết kế đặc biệt"
+  },
+  {
+    "company": "LG",
+    "screenSize": "48",
+    "resolution": "8K",
+    "type": "Tivi thiết kế đặc biệt",
+    "utilities": "Điều khiển bằng điện thoại",
+    "OS": "Linux",
+    "price": 22640779,
+    "name": "LG 48 8K Tivi thiết kế đặc biệt"
+  },
+  {
+    "company": "LG",
+    "screenSize": "48",
+    "resolution": "Full HD",
+    "type": "Tivi Android",
+    "utilities": "Chơi game trên tivi",
+    "OS": "Linux",
+    "price": 25331942,
+    "name": "LG 48 Full HD Tivi Android"
+  },
+  {
+    "company": "LG",
+    "screenSize": "43",
+    "resolution": "8K",
+    "type": "Tivi thiết kế đặc biệt",
+    "utilities": "Trợ lý ảo Google Assistant",
+    "OS": "Android",
+    "price": 23955907,
+    "name": "LG 43 8K Tivi thiết kế đặc biệt"
+  },
+  {
+    "company": "Sony",
+    "screenSize": "48",
+    "resolution": "4K",
+    "type": "Tivi OLED",
+    "utilities": "Chia sẻ màn hình điện thoại lên tivi",
+    "OS": "Google TV",
+    "price": 33392496,
+    "name": "Sony 48 4K Tivi OLED"
+  },
+  {
+    "company": "Casper",
+    "screenSize": "43",
+    "resolution": "HD",
+    "type": "Tivi Android",
+    "utilities": "Chia sẻ màn hình điện thoại lên tivi",
+    "OS": "TizenOS",
+    "price": 30543717,
+    "name": "Casper 43 HD Tivi Android"
+  },
+  {
+    "company": "Sony",
+    "screenSize": "49",
+    "resolution": "8K",
+    "type": "Tivi QLED",
+    "utilities": "Điều khiển bằng giọng nói",
+    "OS": "WebOS",
+    "price": 39798612,
+    "name": "Sony 49 8K Tivi QLED"
+  },
+  {
+    "company": "TCL",
+    "screenSize": "43",
+    "resolution": "Full HD",
+    "type": "Tivi Android",
+    "utilities": "Chia sẻ màn hình điện thoại lên tivi",
+    "OS": "Google TV",
+    "price": 20947192,
+    "name": "TCL 43 Full HD Tivi Android"
+  },
+  {
+    "company": "TOSHIBA",
+    "screenSize": "55",
+    "resolution": "4K",
+    "type": "Tivi Mini LED",
+    "utilities": "Chơi game trên tivi",
+    "OS": "Linux",
+    "price": 13707840,
+    "name": "TOSHIBA 55 4K Tivi Mini LED"
+  },
+  {
+    "company": "Sony",
+    "screenSize": "55",
+    "resolution": "8K",
+    "type": "Tivi Android",
+    "utilities": "Chơi game trên tivi",
+    "OS": "Linux",
+    "price": 22522431,
+    "name": "Sony 55 8K Tivi Android"
+  },
+  {
+    "company": "Sharp",
+    "screenSize": "55",
+    "resolution": "4K",
+    "type": "Tivi Nanocell",
+    "utilities": "Điều khiển bằng giọng nói",
+    "OS": "Google TV",
+    "price": 20845237,
+    "name": "Sharp 55 4K Tivi Nanocell"
+  },
+  {
+    "company": "TCL",
+    "screenSize": "50",
+    "resolution": "Full HD",
+    "type": "Google TV",
+    "utilities": "Chơi game trên tivi",
+    "OS": "TizenOS",
+    "price": 38208139,
+    "name": "TCL 50 Full HD Google TV"
+  },
+  {
+    "company": "TCL",
+    "screenSize": "40",
+    "resolution": "4K",
+    "type": "Tivi QLED",
+    "utilities": "Chia sẻ màn hình điện thoại lên tivi",
+    "OS": "WebOS",
+    "price": 1804989,
+    "name": "TCL 40 4K Tivi QLED"
+  },
+  {
+    "company": "iFFALCON",
+    "screenSize": "43",
+    "resolution": "8K",
+    "type": "Tivi Mini LED",
+    "utilities": "Chia sẻ màn hình điện thoại lên tivi",
+    "OS": "Android",
+    "price": 13273829,
+    "name": "iFFALCON 43 8K Tivi Mini LED"
+  },
+  {
+    "company": "Sharp",
+    "screenSize": "40",
+    "resolution": "4K",
+    "type": "Tivi Nanocell",
+    "utilities": "Trợ lý ảo Google Assistant",
+    "OS": "Android",
+    "price": 2477443,
+    "name": "Sharp 40 4K Tivi Nanocell"
+  },
+  {
+    "company": "Sharp",
+    "screenSize": "42",
+    "resolution": "8K",
+    "type": "Tivi Nanocell",
+    "utilities": "Chia sẻ màn hình điện thoại lên tivi",
+    "OS": "Android",
+    "price": 14230480,
+    "name": "Sharp 42 8K Tivi Nanocell"
+  },
+  {
+    "company": "iFFALCON",
+    "screenSize": "42",
+    "resolution": "4K",
+    "type": "Tivi Android",
+    "utilities": "Chơi game trên tivi",
+    "OS": "Android",
+    "price": 25905965,
+    "name": "iFFALCON 42 4K Tivi Android"
+  },
+  {
+    "company": "Samsung",
+    "screenSize": "48",
+    "resolution": "HD",
+    "type": "Tivi OLED",
+    "utilities": "Chơi game trên tivi",
+    "OS": "TizenOS",
+    "price": 35794211,
+    "name": "Samsung 48 HD Tivi OLED"
+  },
+  {
+    "company": "iFFALCON",
+    "screenSize": "32",
+    "resolution": "8K",
+    "type": "Tivi Nanocell",
+    "utilities": "Điều khiển bằng giọng nói",
+    "OS": "Google TV",
+    "price": 27291108,
+    "name": "iFFALCON 32 8K Tivi Nanocell"
+  },
+  {
+    "company": "TOSHIBA",
+    "screenSize": "48",
+    "resolution": "4K",
+    "type": "Tivi Nanocell",
+    "utilities": "Điều khiển bằng điện thoại",
+    "OS": "Linux",
+    "price": 7269249,
+    "name": "TOSHIBA 48 4K Tivi Nanocell"
+  },
+  {
+    "company": "Samsung",
+    "screenSize": "49",
+    "resolution": "HD",
+    "type": "Smart TV",
+    "utilities": "Chơi game trên tivi",
+    "OS": "TizenOS",
+    "price": 1750890,
+    "name": "Samsung 49 HD Smart TV"
+  },
+  {
+    "company": "TOSHIBA",
+    "screenSize": "50",
+    "resolution": "Full HD",
+    "type": "Tivi thiết kế đặc biệt",
+    "utilities": "Điều khiển bằng giọng nói",
+    "OS": "Linux",
+    "price": 39240219,
+    "name": "TOSHIBA 50 Full HD Tivi thiết kế đặc biệt"
+  },
+  {
+    "company": "iFFALCON",
+    "screenSize": "58",
+    "resolution": "Full HD",
+    "type": "Tivi QLED",
+    "utilities": "Chơi game trên tivi",
+    "OS": "Linux",
+    "price": 38667435,
+    "name": "iFFALCON 58 Full HD Tivi QLED"
+  },
+  {
+    "company": "LG",
+    "screenSize": "43",
+    "resolution": "HD",
+    "type": "Google TV",
+    "utilities": "Trợ lý ảo Google Assistant",
+    "OS": "Android",
+    "price": 27017475,
+    "name": "LG 43 HD Google TV"
+  },
+  {
+    "company": "Sony",
+    "screenSize": "49",
+    "resolution": "8K",
+    "type": "Tivi OLED",
+    "utilities": "Trợ lý ảo Google Assistant",
+    "OS": "Google TV",
+    "price": 1925754,
+    "name": "Sony 49 8K Tivi OLED"
+  },
+  {
+    "company": "TOSHIBA",
+    "screenSize": "43",
+    "resolution": "Full HD",
+    "type": "Tivi Mini LED",
+    "utilities": "Chia sẻ màn hình điện thoại lên tivi",
+    "OS": "TizenOS",
+    "price": 22492592,
+    "name": "TOSHIBA 43 Full HD Tivi Mini LED"
+  },
+  {
+    "company": "LG",
+    "screenSize": "48",
+    "resolution": "8K",
+    "type": "Google TV",
+    "utilities": "Chơi game trên tivi",
+    "OS": "WebOS",
+    "price": 39186333,
+    "name": "LG 48 8K Google TV"
+  },
+  {
+    "company": "iFFALCON",
+    "screenSize": "55",
+    "resolution": "Full HD",
+    "type": "Tivi thiết kế đặc biệt",
+    "utilities": "Chia sẻ màn hình điện thoại lên tivi",
+    "OS": "Google TV",
+    "price": 37138817,
+    "name": "iFFALCON 55 Full HD Tivi thiết kế đặc biệt"
+  },
+  {
+    "company": "TOSHIBA",
+    "screenSize": "32",
+    "resolution": "HD",
+    "type": "Tivi Mini LED",
+    "utilities": "Chia sẻ màn hình điện thoại lên tivi",
+    "OS": "TizenOS",
+    "price": 21083114,
+    "name": "TOSHIBA 32 HD Tivi Mini LED"
+  },
+  {
+    "company": "Sharp",
+    "screenSize": "50",
+    "resolution": "4K",
+    "type": "Tivi Nanocell",
+    "utilities": "Điều khiển bằng điện thoại",
+    "OS": "Google TV",
+    "price": 13470518,
+    "name": "Sharp 50 4K Tivi Nanocell"
+  },
+  {
+    "company": "TOSHIBA",
+    "screenSize": "40",
+    "resolution": "8K",
+    "type": "Tivi Nanocell",
+    "utilities": "Trợ lý ảo Google Assistant",
+    "OS": "Android",
+    "price": 1128747,
+    "name": "TOSHIBA 40 8K Tivi Nanocell"
+  },
+  {
+    "company": "LG",
+    "screenSize": "48",
+    "resolution": "4K",
+    "type": "Tivi OLED",
+    "utilities": "Trợ lý ảo Google Assistant",
+    "OS": "Google TV",
+    "price": 33351072,
+    "name": "LG 48 4K Tivi OLED"
+  },
+  {
+    "company": "Sony",
+    "screenSize": "32",
+    "resolution": "Full HD",
+    "type": "Smart TV",
+    "utilities": "Chơi game trên tivi",
+    "OS": "Google TV",
+    "price": 31855375,
+    "name": "Sony 32 Full HD Smart TV"
+  },
+  {
+    "company": "TCL",
+    "screenSize": "50",
+    "resolution": "Full HD",
+    "type": "Tivi Nanocell",
+    "utilities": "Chia sẻ màn hình điện thoại lên tivi",
+    "OS": "Google TV",
+    "price": 38341585,
+    "name": "TCL 50 Full HD Tivi Nanocell"
+  },
+  {
+    "company": "TCL",
+    "screenSize": "43",
+    "resolution": "Full HD",
+    "type": "Tivi thiết kế đặc biệt",
+    "utilities": "Trợ lý ảo Google Assistant",
+    "OS": "Google TV",
+    "price": 29861529,
+    "name": "TCL 43 Full HD Tivi thiết kế đặc biệt"
+  },
+  {
+    "company": "Sony",
+    "screenSize": "50",
+    "resolution": "Full HD",
+    "type": "Google TV",
+    "utilities": "Điều khiển bằng điện thoại",
+    "OS": "Android",
+    "price": 12543733,
+    "name": "Sony 50 Full HD Google TV"
+  },
+  {
+    "company": "Casper",
+    "screenSize": "55",
+    "resolution": "Full HD",
+    "type": "Tivi QLED",
+    "utilities": "Điều khiển bằng giọng nói",
+    "OS": "Linux",
+    "price": 20087748,
+    "name": "Casper 55 Full HD Tivi QLED"
+  },
+  {
+    "company": "Casper",
+    "screenSize": "32",
+    "resolution": "HD",
+    "type": "Tivi OLED",
+    "utilities": "Điều khiển bằng giọng nói",
+    "OS": "WebOS",
+    "price": 10755844,
+    "name": "Casper 32 HD Tivi OLED"
+  },
+  {
+    "company": "Samsung",
+    "screenSize": "55",
+    "resolution": "8K",
+    "type": "Tivi QLED",
+    "utilities": "Điều khiển bằng giọng nói",
+    "OS": "Android",
+    "price": 2586385,
+    "name": "Samsung 55 8K Tivi QLED"
+  },
+  {
+    "company": "iFFALCON",
+    "screenSize": "42",
+    "resolution": "HD",
+    "type": "Tivi thiết kế đặc biệt",
+    "utilities": "Điều khiển bằng giọng nói",
+    "OS": "Linux",
+    "price": 17522848,
+    "name": "iFFALCON 42 HD Tivi thiết kế đặc biệt"
+  }
+]

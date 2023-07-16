@@ -1,3 +1,4 @@
+import myJson from "./tivi.json" assert { type: "json" };
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 const $$$ = document.getElementsByTagName.bind(document);
@@ -231,180 +232,28 @@ const App = {
       contents: "Giá rẻ quá: 10.990.000₫",
     },
   ],
-  productList: [
-    {
-      company: "Samsung",
-      screenSize: "32",
-      price: "10.000.000",
-      resolution: "HD",
-      type: "smart TV",
-      utilities: "Chơi game trên tv",
-      OS: "android",
-      name: "Sony Google TV KD-43X75K",
-    },
-    {
-      company: "Sony",
-      screenSize: "40",
-      price: "10.000.000",
-      resolution: "Full HD",
-      type: "TV OLED",
-      utilities: "Chơi game trên tv",
-      OS: "webOS",
-      name: "TCL Google TV 58P635",
-    },
-    {
-      company: "LG",
-      screenSize: "42",
-      price: "10.000.000",
-      resolution: "4K",
-      type: "TV QLED",
-      utilities: "Chơi game trên tv",
-      OS: "webOS",
-      name: "Samsung Smart TV Crystal UHD UA50AU8100",
-    },
-  ],
-  categoryList: function (
-    company,
-    screenSize,
-    price,
-    resolution,
-    type,
-    utilities,
-    OS
-  ) {
+  productList: myJson,
+  categoryList: function (min, max) {
     this.company = [];
     this.screenSize = [];
-    this.price = [];
     this.resolution = [];
     this.type = [];
     this.utilities = [];
     this.OS = [];
-  },
-  FilterOption: [
-    // brand
-    [
-      {
-        id: 1,
-        name: "Samsung",
-        img: "https://cdn.tgdd.vn/Brand/2/Samsung1942-b_51.png",
-      },
-      {
-        id: 2,
-        name: "Sony",
-        img: "https://cdn.tgdd.vn/Brand/2/Sony1942-b_57.png",
-      },
-      {
-        id: 3,
-        name: "LG",
-        img: "https://cdn.tgdd.vn/Brand/2/LG1942-b_16.png",
-      },
-      {
-        id: 4,
-        name: "Casper",
-        img: "https://cdn.tgdd.vn/Brand/2/Untitled-1-92x40-1.png",
-      },
-      {
-        id: 5,
-        name: "TCL",
-        img: "https://cdn.tgdd.vn/Brand/2/TCL1942-b_57.png",
-      },
-      {
-        id: 6,
-        name: "Sharp",
-        img: "https://cdn.tgdd.vn/Brand/2/Sharp1942-b_48.png",
-      },
-      {
-        id: 7,
-        name: "TOSHIBA",
-        img: "https://cdn.tgdd.vn/Brand/2/TOSHIBA-200x80-1.png",
-      },
-      {
-        id: 8,
-        name: "iFFALCON",
-        img: "https://cdn.tgdd.vn/Brand/2/iFFALCON-logo-200x80-1.png",
-      },
-    ],
-    //screen size
-    [
-      {
-        id: 1,
-        size: 32,
-      },
-      {
-        id: 2,
-        size: 40,
-      },
-      {
-        id: 3,
-        size: 42,
-      },
-      {
-        id: 4,
-        size: 43,
-      },
-      {
-        id: 5,
-        size: 48,
-      },
-      {
-        id: 6,
-        size: 49,
-      },
-      {
-        id: 7,
-        size: 50,
-      },
-      {
-        id: 8,
-        size: 55,
-      },
-      {
-        id: 9,
-        size: 58,
-      },
-      {
-        id: 10,
-        size: 60,
-      },
-      {
-        id: 11,
-        size: 65,
-      },
-      {
-        id: 12,
-        size: 70,
-      },
-    ],
-    //
-  ],
-  showProducts: function () {
-    const fillterList = new this.categoryList();
-    $(".showProducts").addEventListener("click", () => {
-      $$(".activeBtn").forEach((item) => {
-        console.log(item.getAttribute("values"));
-        console.log(item.parentNode.parentNode);
-        if (item.parentNode.parentNode.classList.contains("brand")) {
-          fillterList.company.push(item.getAttribute("values"));
-        }
-        if (item.parentNode.parentNode.classList.contains("screenSize")) {
-          fillterList.screenSize.push(item.getAttribute("values"));
-        }
-      });
-      return fillterList;
-    });
+    this.minPrice = min;
+    this.maxPrice = max;
   },
   inputRange: function () {
     let pricegap = 1000;
     $(".min-value").addEventListener("input", () => {
-      // let text = /^[a-zA-Z]+$/;
+      let text = /^[a-zA-Z]+$/;
       if ($(".min-value").value.match(text)) {
         $(".min-value").value = "";
       }
-      const num = $(".min-value").value;
       // $(".min-value").value = new Intl.NumberFormat().format(num);
       $$(".rangeInput input")[0].value = $(".min-value").value;
-      $$(".rangeInput input")[1].value = $(".max-value").value;
     });
+
     $$(".rangeInput input").forEach((input) => {
       input.addEventListener("input", (e) => {
         let minValue = parseInt($$(".rangeInput input")[0].value);
@@ -426,7 +275,7 @@ const App = {
       });
     });
   },
-  testOption: function () {
+  handleOptionClick: function () {
     $$(".selected-option").forEach((item) => {
       item.addEventListener("click", (e) => {
         e.preventDefault();
@@ -439,7 +288,10 @@ const App = {
   fillterProduct: function () {
     // show the product
     $(".showProducts").addEventListener("click", () => {
-      const fillterList = new this.categoryList();
+      const fillterList = new this.categoryList(
+        parseFloat($(".min-value").value),
+        parseFloat($(".max-value").value)
+      );
       $$(".activeBtn").forEach((item) => {
         if (item.parentNode.parentNode.classList.contains("brand")) {
           fillterList.company.push(item.getAttribute("values"));
@@ -447,7 +299,20 @@ const App = {
         if (item.parentNode.parentNode.classList.contains("screenSize")) {
           fillterList.screenSize.push(item.getAttribute("values"));
         }
+        if (item.parentNode.parentNode.classList.contains("resolution")) {
+          fillterList.resolution.push(item.getAttribute("values"));
+        }
+        if (item.parentNode.parentNode.classList.contains("tiviType")) {
+          fillterList.type.push(item.getAttribute("values"));
+        }
+        if (item.parentNode.parentNode.classList.contains("utilities")) {
+          fillterList.utilities.push(item.getAttribute("values"));
+        }
+        if (item.parentNode.parentNode.classList.contains("OS")) {
+          fillterList.OS.push(item.getAttribute("values"));
+        }
       });
+      console.log(fillterList);
       // filter product
       const products = [
         ...new Set(
@@ -457,11 +322,14 @@ const App = {
         ),
       ];
       console.log(products);
+      // key match & minPrice < product price < maxPrice
       const newProduct = products.filter((item) => {
         for (var key in fillterList) {
           if (
             Array.isArray(fillterList[key]) &&
-            fillterList[key].includes(item[key])
+            fillterList[key].includes(item[key]) &&
+            fillterList.minPrice < parseFloat(item.price) / 1000 &&
+            parseFloat(item.price) / 1000 < fillterList.maxPrice
           )
             return true;
         }
@@ -590,10 +458,8 @@ const App = {
     this.SwiperMethod();
     this.fillterProduct();
     this.FilterHandleClick();
-    // this.showProducts();
     this.inputRange();
-
-    this.testOption();
+    this.handleOptionClick();
   },
 };
 App.Start();
